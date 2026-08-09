@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Production engineering notes by Avaz Garayev on .NET, architecture, AI, integrations, automation, performance and product engineering." />
+  <meta name="theme-color" content="#050b14" />
+  <title>Blog — Avaz Garayev</title>
+  <link rel="icon" href="assets/img/portrait-clean.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    .featured-blog-image {
+      overflow: hidden;
+      min-height: 320px;
+      padding: 0;
+    }
+    .featured-blog-image img,
+    .image-thumb img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .featured-blog-image img {
+      min-height: 320px;
+    }
+    .featured-blog-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .article-card {
+      display: flex;
+      flex-direction: column;
+    }
+    .article-thumb.image-thumb {
+      overflow: hidden;
+      padding: 0;
+    }
+    .article-thumb.image-thumb img {
+      aspect-ratio: 16 / 9;
+    }
+    .topic-thumb {
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      gap: .3rem;
+      padding: 1.4rem;
+    }
+    .topic-thumb strong {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(1.7rem, 4vw, 2.7rem);
+      letter-spacing: -.04em;
+    }
+    .topic-thumb span {
+      font-size: .82rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      opacity: .7;
+    }
+    .article-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem 1.1rem;
+      margin-top: auto;
+      padding-top: 1.1rem;
+    }
+    .article-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .28rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .article-link span {
+      transition: transform .2s ease;
+    }
+    .article-link:hover span {
+      transform: translate(2px, -2px);
+    }
+    .article-note {
+      display: block;
+      margin-top: .8rem;
+      opacity: .64;
+    }
+    .sidebar-topic {
+      display: block;
+      padding: .45rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .sidebar-topic:last-child {
+      border-bottom: 0;
+    }
+    @media (max-width: 760px) {
+      .featured-blog-image,
+      .featured-blog-image img {
+        min-height: 220px;
+      }
+      .topic-thumb {
+        min-height: 150px;
+      }
+    }
+  </style>
+
+</head>
+<body data-page="blog">
+  <div class="cursor-glow" aria-hidden="true"></div><div class="noise" aria-hidden="true"></div>
+  <header class="site-header"><div class="container nav-shell"><a class="brand" href="index.html"><img src="assets/img/portrait-clean.png" alt=""/><span>Avaz Garayev</span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button><nav class="nav-links"><a href="index.html">Home</a><a href="index.html#about">About</a><a href="index.html#experience">Experience</a><a href="projects.html">Projects</a><a class="active" href="blog.html">Blog</a><a href="index.html#contact">Contact</a></nav><div class="nav-actions"><a class="icon-link" href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noreferrer">in</a><a class="icon-link" href="mailto:avazgarayev@gmail.com">@</a><a class="btn btn-ghost btn-small" href="assets/resume/Avaz_Garayev_Resume.pdf" target="_blank">Resume ↗</a></div></div></header>
+
+
+  <main>
+    <section class="page-hero section">
+      <div class="orb orb-b"></div>
+      <div class="container reveal">
+        <div class="section-kicker">Engineering writing</div>
+        <h1>Production lessons, technical decisions & <span class="gradient-text">engineering deep dives.</span></h1>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container blog-layout">
+        <div class="blog-main">
+          
+      <article class="featured-article glass reveal">
+        <div class="featured-blog-art featured-blog-image">
+          <img src="assets/img/blog/bsu-localization.png" alt="Baku Slavic University localization article cover" />
+        </div>
+        <div class="featured-blog-copy">
+          <div class="section-kicker">Featured engineering article</div>
+          <div class="article-meta">August 2, 2026 · Software Architecture · Localization · SEO</div>
+          <h2>Reviewing AI-Generated Localization Architecture: Routing, Culture Strategy &amp; SEO</h2>
+          <p>A production-focused analysis of localization choices for the Baku Slavic University website: when route-based language handling is preferable, how localization decisions affect indexing and SEO, and why engineers still need to critically review architecture and code proposed by AI systems.</p>
+          <div class="tag-row"><span>.NET</span><span>Localization</span><span>SEO</span><span>Architecture</span></div>
+          <div class="article-links"><a class="article-link" href="https://lnkd.in/ds_dDX_G" target="_blank" rel="noreferrer">Read on Medium <span>↗</span></a><a class="article-link" href="https://www.linkedin.com/posts/avaz-garayev_ham%C4%B1ya-salam-bu-g%C3%BCn-s%C3%BCni-i%CC%87ntellekt-activity-7489707241445650432-ZOdy?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAADZH8aQBVAiwhsWH8gLUrUp-QdX3C1wvauM" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a></div>
+          <small class="article-note">Article language: Azerbaijani</small>
+        </div>
+      </article>
+
+
+          <div class="filter-row" data-filter-group="blog">
+            <button class="filter active" data-filter="all">All posts</button>
+            <button class="filter" data-filter="architecture">.NET & Architecture</button>
+            <button class="filter" data-filter="ai">AI & Knowledge Systems</button>
+            <button class="filter" data-filter="automation">Automation & Integrations</button>
+            <button class="filter" data-filter="product">Product Engineering</button>
+            <button class="filter" data-filter="performance">Performance & Algorithms</button>
+          </div>
+
+          <div class="article-grid" data-filter-items>
+            
+        <article class="article-card glass reveal" data-category="ai architecture dotnet">
+          <div class="article-thumb image-thumb"><img loading="lazy" src="assets/img/blog/bsu-information-assistant-architecture.png" alt="BSU information assistant illustration" /></div>
+          <div class="article-meta">June 27, 2026 · AI &amp; Knowledge Systems · .NET Architecture</div>
+          <h3>Building a Multilingual University Information Assistant: Architecture, Guardrails &amp; Retrieval</h3>
+          <p>A technical breakdown of the BSU Information Assistant, covering controlled knowledge sources, content cleaning and selection, unsupported-answer prevention, verified source links, department contacts, multilingual behavior, implementation trade-offs, limitations and lessons from production use.</p>
+          <div class="tag-row"><span>.NET</span><span>AI</span><span>Retrieval</span><span>Multilingual</span></div>
+          <div class="article-links"><a class="article-link" href="https://lnkd.in/dDFCGCH3" target="_blank" rel="noreferrer">Read on Medium <span>↗</span></a><a class="article-link" href="https://www.linkedin.com/posts/avaz-garayev_dotnet-aspnetcore-csharp-activity-7476667581890916355-C2ky?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAADZH8aQBVAiwhsWH8gLUrUp-QdX3C1wvauM" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a></div>
+        </article>
+        <article class="article-card glass reveal" data-category="ai dotnet product">
+          <div class="article-thumb image-thumb"><img loading="lazy" src="assets/img/blog/bsu-information-assistant-ui.png" alt="BSU information assistant user interface" /></div>
+          <div class="article-meta">June 27, 2026 · AI Product Engineering · ASP.NET Core</div>
+          <h3>BSU Information Assistant: From Content Search to Multilingual User Guidance</h3>
+          <p>A feature release focused on the user-facing side of the BSU assistant: helping visitors find university information faster, routing them toward relevant source pages and departments, and detecting the question language so the interaction remains accessible to multilingual audiences.</p>
+          <div class="tag-row"><span>ASP.NET Core</span><span>MVC</span><span>Chatbot</span><span>Search</span></div>
+          <div class="article-links"><a class="article-link" href="https://www.linkedin.com/posts/avaz-garayev_dotnet-aspnetcore-mvc-activity-7476624100887810048-Ovy9?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAADZH8aQBVAiwhsWH8gLUrUp-QdX3C1wvauM" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a></div>
+        </article>
+        <article class="article-card glass reveal" data-category="product dotnet ai">
+          <div class="article-thumb image-thumb"><img loading="lazy" src="assets/img/blog/ayna-studio.png" alt="Ayna Studio virtual try-on product cover" /></div>
+          <div class="article-meta">June 17, 2026 · Product Engineering · SaaS MVP</div>
+          <h3>Ayna Studio: Validating a Virtual Try-On SaaS Through an MVP</h3>
+          <p>A product-engineering look at a Telegram-based virtual try-on MVP built with C# and .NET Core Web API. The focus is not only implementation, but validating the problem with real users, observing behavior, iterating on the workflow and improving the product from practical feedback.</p>
+          <div class="tag-row"><span>.NET Web API</span><span>SaaS</span><span>MVP</span><span>Telegram</span></div>
+          <div class="article-links"><a class="article-link" href="https://www.linkedin.com/posts/avaz-garayev_id-like-to-share-one-of-the-small-saas-projects-activity-7473048401740361729-EAzO?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAADZH8aQBVAiwhsWH8gLUrUp-QdX3C1wvauM" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a><a class="article-link" href="https://t.me/suites_me_bot" target="_blank" rel="noreferrer">Try MVP <span>↗</span></a></div>
+        </article>
+        <article class="article-card glass reveal" data-category="performance dotnet">
+          <div class="article-thumb image-thumb"><img loading="lazy" src="assets/img/blog/keys-and-rooms.png" alt="Keys and Rooms algorithm illustration" /></div>
+          <div class="article-meta">April 14, 2026 · Algorithms &amp; Data Structures · C#</div>
+          <h3>Keys and Rooms in C#: Graph Traversal, Recursion &amp; Complexity</h3>
+          <p>A concise walkthrough of the classic Keys and Rooms problem, using C# to explain reachability, recursive traversal and graph-oriented reasoning while keeping implementation and complexity trade-offs approachable.</p>
+          <div class="tag-row"><span>C#</span><span>Graphs</span><span>Recursion</span><span>Algorithms</span></div>
+          <div class="article-links"><a class="article-link" href="https://lnkd.in/dD7sN9k9" target="_blank" rel="noreferrer">Read on Medium <span>↗</span></a><a class="article-link" href="https://www.linkedin.com/posts/avaz-garayev_keys-and-rooms-hi-everyone-i-recently-activity-7449708836262834177-4dy2?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAADZH8aQBVAiwhsWH8gLUrUp-QdX3C1wvauM" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a></div>
+        </article>
+        <article class="article-card glass reveal" data-category="automation dotnet architecture">
+          <div class="article-thumb topic-thumb">
+          <strong>META</strong>
+          <span>Publishing Automation</span>
+        </div>
+          <div class="article-meta">December 2, 2025 · Automation &amp; Integrations · Meta Graph API</div>
+          <h3>Automating University Social Publishing with Meta Graph API</h3>
+          <p>An integration workflow that publishes university news to Facebook and Instagram directly from the website. The system extracts media, handles multi-image posts and video/Reels flows, generates structured captions and removes repetitive manual publishing from the social media team.</p>
+          <div class="tag-row"><span>.NET 8</span><span>Meta Graph API</span><span>Azure Blob</span><span>Automation</span></div>
+          <div class="article-links"><a class="article-link" href="https://www.linkedin.com/posts/avaz-garayev_dotnet-softwaredevelopment-metaapi-activity-7401601359571218432-WEUc?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAADZH8aQBVAiwhsWH8gLUrUp-QdX3C1wvauM" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a></div>
+        </article>
+        <article class="article-card glass reveal" data-category="architecture dotnet">
+          <div class="article-thumb topic-thumb">
+          <strong>.NET 8</strong>
+          <span>Production Web Platform</span>
+        </div>
+          <div class="article-meta">October 2, 2025 · .NET Architecture · Web Platform Engineering</div>
+          <h3>Engineering the BSU Website: .NET 8 MVC, SEO &amp; Production Readiness</h3>
+          <p>A production web-platform overview covering ASP.NET Core 8 MVC, layered architecture, EF Core with SQL Server, responsive Bootstrap UI, JWT-ready API security, dependency injection, repository boundaries, performance optimization, environment separation, clean URLs, caching and SEO-oriented delivery.</p>
+          <div class="tag-row"><span>.NET 8 MVC</span><span>EF Core</span><span>SQL Server</span><span>SEO</span></div>
+          <div class="article-links"><a class="article-link" href="https://bsu-uni.edu.az" target="_blank" rel="noreferrer">Visit website <span>↗</span></a><a class="article-link" href="https://www.linkedin.com/posts/avaz-garayev_im-excited-to-announce-the-successful-completion-activity-7379408356253331456-3N7Y?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAADZH8aQBVAiwhsWH8gLUrUp-QdX3C1wvauM" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a></div>
+        </article>
+        <article class="article-card glass reveal" data-category="performance dotnet">
+          <div class="article-thumb image-thumb"><img loading="lazy" src="assets/img/blog/async-http-dotnet.png" alt="C# async HTTP code sample" /></div>
+          <div class="article-meta">May 15, 2025 · .NET Performance · Networking</div>
+          <h3>Async HTTP in .NET: Concurrency Without Socket Exhaustion</h3>
+          <p>A practical networking note on using Task.WhenAll for concurrent HTTP workloads while reusing HttpClient to avoid connection churn and socket exhaustion. The core lesson is balancing throughput with connection lifecycle stability.</p>
+          <div class="tag-row"><span>HttpClient</span><span>Task.WhenAll</span><span>Async</span><span>Networking</span></div>
+          <div class="article-links"><a class="article-link" href="https://www.linkedin.com/posts/avaz-garayev_async-http-calls-in-net-speeding-up-activity-7328693752804356098-2yMI?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAADZH8aQBVAiwhsWH8gLUrUp-QdX3C1wvauM" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a></div>
+        </article>
+        <article class="article-card glass reveal" data-category="ai product">
+          <div class="article-thumb topic-thumb">
+          <strong>PY AUDIO</strong>
+          <span>Voice Processing</span>
+        </div>
+          <div class="article-meta">September 8, 2023 · Python · Speech &amp; Audio Engineering</div>
+          <h3>Voice Processing with Python: Waveforms, Recognition &amp; Speech Synthesis</h3>
+          <p>An early Python project exploring practical voice operations: waveform visualization, configurable audio generation, microphone recording, speech-to-text capture and text-to-speech playback for cases where the original speaker voice should not be exposed.</p>
+          <div class="tag-row"><span>Python</span><span>Speech-to-Text</span><span>TTS</span><span>Audio</span></div>
+          <div class="article-links"><a class="article-link" href="https://lnkd.in/dhJzVmRC" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a class="article-link" href="https://www.linkedin.com/posts/avaz-garayev_github-avazgaraevvoice-operations-with-python-activity-7105843411437428736-EUIy?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAADZH8aQBVAiwhsWH8gLUrUp-QdX3C1wvauM" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a></div>
+        </article>
+        <article class="article-card glass reveal" data-category="ai automation product">
+          <div class="article-thumb topic-thumb">
+          <strong>AI BOT</strong>
+          <span>Conversational Prototype</span>
+        </div>
+          <div class="article-meta">September 7, 2023 · Conversational AI · Voice Integration</div>
+          <h3>Multi-Functional Voice Chatbot with Wit.ai &amp; ChatGPT</h3>
+          <p>An early conversational-AI prototype combining text and voice interaction for customer-service scenarios. The solution integrated Wit.ai and ChatGPT-oriented response flows with speech recognition so users could interact through spoken or written requests.</p>
+          <div class="tag-row"><span>Chatbot</span><span>Wit.ai</span><span>ChatGPT</span><span>Voice</span></div>
+          <div class="article-links"><a class="article-link" href="https://lnkd.in/dP3S353i" target="_blank" rel="noreferrer">GitHub repository <span>↗</span></a><a class="article-link" href="https://lnkd.in/d2f2QcYT" target="_blank" rel="noreferrer">Related repository <span>↗</span></a><a class="article-link" href="https://www.linkedin.com/posts/avaz-garayev_github-avazgaraevmulti-functional-chatbot-activity-7105504847411490816-P9ze?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAADZH8aQBVAiwhsWH8gLUrUp-QdX3C1wvauM" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a></div>
+        </article>
+          </div>
+        </div>
+
+        <aside class="blog-sidebar">
+          <div class="author-card glass reveal delay-1">
+            <div class="author-photo"><img src="assets/img/portrait-clean.png" alt="Avaz Garayev" /></div>
+            <h3>Avaz Garayev</h3>
+            <span>Senior Software Engineer</span>
+            <p>I write about production .NET systems, software architecture, AI-assisted applications, integrations, automation, performance and product engineering.</p>
+            <a class="text-link" href="index.html#about">About me →</a>
+          </div>
+
+          <div class="sidebar-card glass reveal delay-2">
+            <h3>Engineering focus</h3>
+            <span class="sidebar-topic">.NET & Software Architecture</span>
+            <span class="sidebar-topic">AI & Knowledge Systems</span>
+            <span class="sidebar-topic">Automation & API Integrations</span>
+            <span class="sidebar-topic">Product & MVP Engineering</span>
+            <span class="sidebar-topic">Performance & Algorithms</span>
+          </div>
+
+         
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">Writing themes</div>
+            <h2>Engineering from implementation to impact.</h2>
+          </div>
+        </div>
+        <div class="series-grid">
+          <div class="series-card glass reveal">
+            <span>01</span>
+            <h3>Production .NET & Architecture</h3>
+            <p>Application boundaries, localization, web architecture, networking, performance and production-readiness decisions.</p>
+          </div>
+          <div class="series-card glass reveal delay-1">
+            <span>02</span>
+            <h3>AI & Knowledge Systems</h3>
+            <p>Retrieval, multilingual assistants, content quality, answer guardrails, speech interfaces and practical AI integration.</p>
+          </div>
+          <div class="series-card glass reveal delay-2">
+            <span>03</span>
+            <h3>Automation & Product Engineering</h3>
+            <p>API integrations, workflow automation, SaaS MVPs and engineering decisions connected directly to user and business outcomes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta glass reveal">
+          <div>
+            <div class="section-kicker">From engineering notes to production systems</div>
+            <h2>Explore the projects behind the technical decisions.</h2>
+            <p>See how architecture, cloud delivery, integrations and business logic are applied across real software projects.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="projects.html">Explore projects ↗</a>
+            <a class="btn btn-ghost" href="mailto:avazgarayev@gmail.com">Get in touch ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><img src="assets/img/portrait-clean.png" alt=""/><span>Avaz Garayev</span></a><p>Senior Software Engineer · Full-Stack · Cloud · Automation</p></div><div><b>Navigate</b><a href="index.html#about">About</a><a href="index.html#experience">Experience</a><a href="projects.html">Projects</a><a href="blog.html">Blog</a></div><div><b>Connect</b><a href="mailto:avazgarayev@gmail.com">avazgarayev@gmail.com</a><a href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noreferrer">LinkedIn</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> Avaz Garayev</span><span>Notes on architecture, AI, automation and product engineering.</span></div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
