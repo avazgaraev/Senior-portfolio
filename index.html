@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Avaz Garayev — Senior Software Engineer focused on full-stack development, cloud systems and business automation." />
+  <meta name="description" content="Avaz Garayev — Founder & Senior Software Engineer building enterprise software, cloud systems, business automation and AI-powered solutions." />
   <meta name="theme-color" content="#050b14" />
-  <title>Avaz Garayev — Senior Software Engineer</title>
-  <link rel="icon" href="assets/img/portrait-clean.png" />
+  <title>Avaz Garayev — Founder & Senior Software Engineer</title>
+  <link rel="icon" href="./assets/img/portrait-clean.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/your-ai.css" />
 </head>
 <body data-page="home">
   <div class="cursor-glow" aria-hidden="true"></div>
@@ -19,22 +20,29 @@
   <header class="site-header" id="top">
     <div class="container nav-shell">
       <a class="brand" href="index.html" aria-label="Avaz Garayev home">
-        <img src="assets/img/portrait-clean.png" alt="" />
+        <img src="./assets/img/portrait-clean.png" alt="" />
         <span>Avaz Garayev</span>
       </a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
+        <a href="#what-i-solve">What I Solve</a>
         <a href="#experience">Experience</a>
         <a href="projects.html">Projects</a>
         <a href="blog.html">Blog</a>
+        <a class="nav-ai-link" href="your-ai-department.html">Your AI Department</a>
         <a href="#contact">Contact</a>
       </nav>
+
       <div class="nav-actions">
         <a class="icon-link" href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
         <a class="icon-link" href="mailto:avazgarayev@gmail.com" aria-label="Email">@</a>
-        <a class="btn btn-ghost btn-small" href="assets/resume/Avaz_Garayev_Resume.pdf" target="_blank">Resume <span>↗</span></a>
+        <a class="btn btn-ghost btn-small" href="./assets/resume/Avaz_Garayev_Resume.pdf" target="_blank">Resume <span>↗</span></a>
       </div>
     </div>
   </header>
@@ -43,24 +51,55 @@
     <section class="hero section" id="home">
       <div class="orb orb-a" aria-hidden="true"></div>
       <div class="orb orb-b" aria-hidden="true"></div>
+
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <div class="eyebrow"><span class="status-dot"></span> Baku, Azerbaijan</div>
           <div class="eyebrow"><span class="status-dot"></span> Krakow, Poland</div>
-          <div class="eyebrow">  · Open to global collaboration</div>
+          <div class="eyebrow">· Open to global collaboration</div>
 
           <h1>Engineering software that creates <span class="gradient-text">measurable value.</span></h1>
-          <p class="hero-role">Senior Software Engineer <span>·</span> Full-Stack <span>·</span> Cloud <span>·</span> Automation</p>
-          <p class="hero-lead">I design and build scalable enterprise applications, cloud-connected systems and business automation solutions. My work combines clean architecture, reliable integrations and pragmatic engineering to turn complex requirements into useful products.</p>
+
+          <p class="hero-role hero-role-founder">
+            Founder, Your AI Department
+            <span>·</span>
+            Senior Software Engineer
+            <span>·</span>
+            Full-Stack
+            <span>·</span>
+            Cloud
+            <span>·</span>
+            Automation
+          </p>
+
+          <p class="hero-lead">
+            I design and build scalable enterprise applications, cloud-connected systems, business automation
+            and AI-powered products. My work combines clean architecture, reliable integrations and pragmatic
+            engineering to turn complex business requirements into useful, maintainable technology.
+          </p>
+
           <div class="hero-actions">
-            <a class="btn btn-primary magnetic" href="projects.html">Explore Projects <span>↗</span></a>
-            <a class="btn btn-ghost magnetic" href="#contact">Let’s Connect <span>→</span></a>
+            <a class="btn btn-primary magnetic" href="#what-i-solve">What I Solve <span>↓</span></a>
+            <a class="btn btn-ghost magnetic" href="your-ai-department.html">Explore Your AI Department <span>↗</span></a>
           </div>
+
           <div class="metrics">
-            <div class="metric"><strong>5+ Years</strong><span>Building production software</span></div>
-            <div class="metric"><strong>Enterprise Systems</strong><span>Architecture · APIs · Microservices</span></div>
-            <div class="metric"><strong>Cloud Engineering</strong><span>Azure · AWS · DevOps</span></div>
-            <div class="metric"><strong>Business Automation</strong><span>Integrations · AI · Workflow Automation</span></div>
+            <div class="metric">
+              <strong>5+ Years</strong>
+              <span>Building production software</span>
+            </div>
+            <div class="metric">
+              <strong>Enterprise Systems</strong>
+              <span>Architecture · APIs · Microservices</span>
+            </div>
+            <div class="metric">
+              <strong>Cloud Engineering</strong>
+              <span>Azure · AWS · DevOps</span>
+            </div>
+            <div class="metric">
+              <strong>Business Automation</strong>
+              <span>Integrations · AI · Workflow Automation</span>
+            </div>
           </div>
         </div>
 
@@ -68,18 +107,21 @@
           <div class="portrait-stage tilt-card">
             <div class="tech-ring ring-1"></div>
             <div class="tech-ring ring-2"></div>
+
             <div class="portrait-card">
-              <img src="assets/img/portrait-clean.png" alt="Portrait of Avaz Garayev" />
+              <img src="./assets/img/portrait-clean.png" alt="Portrait of Avaz Garayev" />
             </div>
-            <div class="floating-badge badge-one"><span>01</span><b>Clean Architecture</b></div>
+
+            <div class="floating-badge badge-one"><span>01</span><b>Software Architecture</b></div>
             <div class="floating-badge badge-two"><span>02</span><b>Cloud & Automation</b></div>
-            <div class="floating-badge badge-three"><span>03</span><b>Business Solutions</b></div>
+            <div class="floating-badge badge-three"><span>03</span><b>AI Business Solutions</b></div>
           </div>
         </div>
       </div>
+
       <div class="container code-strip" aria-hidden="true">
         <span>const solution = architecture + reliability + automation;</span>
-        <span>build → measure → improve</span>
+        <span>business_problem → engineered_solution</span>
         <span>ship(value)</span>
       </div>
     </section>
@@ -87,14 +129,26 @@
     <section class="section section-tight" id="about">
       <div class="container">
         <div class="section-kicker reveal">About me</div>
+
         <div class="about-panel glass reveal">
           <div class="about-title">
             <h2>I build software around <span class="gradient-text">real business problems.</span></h2>
           </div>
+
           <div class="about-copy">
-            <p>I’m a Senior Software Engineer with experience across enterprise application development, cloud engineering and automation. I enjoy converting complex business workflows into clean, maintainable and high-performance systems.</p>
-            <p>My approach is architecture-first but practical: choose the right level of complexity, keep integrations reliable, optimize where it matters, and deliver software that is understandable for both teams and users.</p>
+            <p>
+              I’m a Founder and Senior Software Engineer with experience across enterprise application development,
+              cloud engineering, integrations and automation. I work across the full solution lifecycle — from
+              understanding a business problem and shaping the architecture to implementation, integration,
+              deployment and continuous improvement.
+            </p>
+            <p>
+              Alongside engineering work, I’m building <strong>Your AI Department</strong> — a business-focused AI
+              solutions direction centered on practical AI systems, intelligent automation, conversational interfaces
+              and AI-enabled workflows rather than AI for its own sake.
+            </p>
           </div>
+
           <div class="about-points">
             <div><span>◇</span> Clean architecture & SOLID</div>
             <div><span>◈</span> Scalable APIs & integrations</div>
@@ -105,23 +159,274 @@
       </div>
     </section>
 
-    <section class="section" id="expertise">
+    <section class="section solve-section" id="what-i-solve">
+      <div class="orb solve-orb" aria-hidden="true"></div>
+
       <div class="container">
         <div class="section-heading reveal">
-          <div><div class="section-kicker">Core expertise</div><h2>Technology with business context.</h2></div>
-          <p>My strongest work sits at the intersection of backend engineering, modern frontend development, cloud infrastructure and workflow automation, on top of the system architecture.</p>
+          <div>
+            <div class="section-kicker">What I solve</div>
+            <h2>Technology should solve a business problem — <span class="gradient-text">not create another one.</span></h2>
+          </div>
+          <p>
+            I work across software engineering and business technology: from public-facing digital products to
+            internal enterprise systems, integrations, automation and AI-powered solutions.
+          </p>
         </div>
-        <div class="skill-cloud reveal delay-1">
-          <span>C#</span><span>.NET / ASP.NET Core</span><span>Angular</span><span>TypeScript</span><span>Azure</span><span>SQL Server & MongoDB & PostgreSQL</span><span>Clean Architecture</span><span>CQRS</span><span>OAuth 2.0</span><span>Unit / Integration testing</span><span>Microservices</span><span>REST / SOAP APIs</span><span>EF Core</span><span>Redis</span><span>Kafka & RabbitMQ</span><span>Azure Service Bus</span><span>Docker</span><span>CI/CD</span><span>Integrations</span><span>Automation</span>
+
+        <div class="solve-grid">
+          <article class="solve-card solve-card-ai glass reveal tilt-card">
+            <div class="solve-card-top">
+              <span class="solve-index">01</span>
+              <span class="solve-label">AI Solutions</span>
+            </div>
+            <div class="solve-icon ai-core-icon" aria-hidden="true"><i></i><b>AI</b></div>
+            <h3>Your AI Department</h3>
+            <p>
+              Practical AI systems for real operations: conversational assistants, voice AI, AI agents,
+              recruiting workflows, content operations and intelligent business automation.
+            </p>
+            <div class="solve-tags">
+              <span>AI Agents</span><span>Voice AI</span><span>RAG</span><span>Automation</span>
+            </div>
+            <a class="solve-link" href="your-ai-department.html">Explore AI solutions <span>↗</span></a>
+          </article>
+
+          <article class="solve-card glass reveal delay-1 tilt-card">
+            <div class="solve-card-top">
+              <span class="solve-index">02</span>
+              <span class="solve-label">Digital Presence</span>
+            </div>
+            <div class="solve-icon" aria-hidden="true">⌘</div>
+            <h3>Websites & Digital Platforms</h3>
+            <p>
+              Professional websites, portals and full-stack platforms built for performance, maintainability,
+              content operations and future product growth.
+            </p>
+            <div class="solve-tags">
+              <span>Corporate Web</span><span>Portals</span><span>Full-Stack</span>
+            </div>
+          </article>
+
+          <article class="solve-card glass reveal delay-2 tilt-card">
+            <div class="solve-card-top">
+              <span class="solve-index">03</span>
+              <span class="solve-label">Business Systems</span>
+            </div>
+            <div class="solve-icon" aria-hidden="true">▦</div>
+            <h3>End-to-End Technical Solutions</h3>
+            <p>
+              Business-focused internal systems and enterprise applications covering workflows,
+              permissions, data, reporting, cloud delivery and operational reliability.
+            </p>
+            <div class="solve-tags">
+              <span>Enterprise</span><span>ERP</span><span>Internal Tools</span>
+            </div>
+          </article>
+
+          <article class="solve-card glass reveal tilt-card">
+            <div class="solve-card-top">
+              <span class="solve-index">04</span>
+              <span class="solve-label">Connected Systems</span>
+            </div>
+            <div class="solve-icon" aria-hidden="true">⇄</div>
+            <h3>Integrations</h3>
+            <p>
+              Connecting internal platforms, external APIs, cloud services, messaging systems and third-party
+              tools into reliable end-to-end workflows.
+            </p>
+            <div class="solve-tags">
+              <span>REST / SOAP</span><span>Messaging</span><span>External APIs</span>
+            </div>
+          </article>
+
+          <article class="solve-card glass reveal delay-1 tilt-card">
+            <div class="solve-card-top">
+              <span class="solve-index">05</span>
+              <span class="solve-label">Operational Efficiency</span>
+            </div>
+            <div class="solve-icon" aria-hidden="true">↻</div>
+            <h3>Business Automation</h3>
+            <p>
+              Replacing repetitive manual processes with controlled workflows, notifications, API orchestration
+              and automation designed around measurable operational value.
+            </p>
+            <div class="solve-tags">
+              <span>Workflow</span><span>Agents</span><span>Notifications</span>
+            </div>
+          </article>
+
+          <article class="solve-card glass reveal delay-2 tilt-card">
+            <div class="solve-card-top">
+              <span class="solve-index">06</span>
+              <span class="solve-label">Product Engineering</span>
+            </div>
+            <div class="solve-icon" aria-hidden="true">◇</div>
+            <h3>SaaS & Custom Products</h3>
+            <p>
+              From MVP to production: product architecture, backend, frontend, cloud deployment and integration
+              strategy for software products built around a specific market need.
+            </p>
+            <div class="solve-tags">
+              <span>MVP</span><span>SaaS</span><span>Cloud</span><span>Product</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="solve-footer glass reveal">
+          <div>
+            <span class="section-kicker">One principle</span>
+            <h3>Start with the problem. Choose the technology after.</h3>
+          </div>
+          <p>
+            Not every business needs AI, microservices or a complex platform. The goal is to identify the
+            smallest reliable technical solution that creates meaningful value and can grow when the business needs it.
+          </p>
         </div>
       </div>
     </section>
 
+    <section class="section demo-section" id="demos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">Selected demos</div>
+            <h2>Built, tested and shown <span class="gradient-text">in motion.</span></h2>
+          </div>
+          
+        </div>
+
+        <div class="demo-grid">
+          <article class="demo-card glass reveal tilt-card">
+            <div class="demo-video-shell">
+              <iframe
+                src="https://www.youtube.com/embed/ZphiDVwqp2o?si=Ah6Ew9XHfWmsAB9M"
+                title="MetaHuman AI receptionist demo"
+                loading="lazy"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="demo-card-body">
+              <div class="demo-card-topline">
+                <span class="demo-type">AI · Digital Human</span>
+                <span class="demo-index">01</span>
+              </div>
+
+              <h3>MetaHuman AI Receptionist</h3>
+              <p>
+                Experimental real-time digital human experience combining conversational AI,
+                speech interaction and a MetaHuman interface for customer-facing business scenarios.
+              </p>
+
+              <div class="tag-row">
+                <span>MetaHuman</span>
+                <span>Realtime AI</span>
+                <span>Voice</span>
+                <span>Business Experience</span>
+              </div>
+
+              <a class="demo-link" href="your-ai-department.html">
+                Explore Your AI Department <span>↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="demo-card glass reveal delay-1 tilt-card">
+            <div class="demo-video-shell">
+              <iframe
+                src="https://www.youtube.com/embed/U3eSe0NNtyI?si=HJOvITDMTSfly9Ke"
+                title="Microsoft HoloLens mixed reality demo"
+                loading="lazy"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="demo-card-body">
+              <div class="demo-card-topline">
+                <span class="demo-type">Mixed Reality · R&amp;D</span>
+                <span class="demo-index">02</span>
+              </div>
+
+              <h3>Microsoft HoloLens Experience</h3>
+              <p>
+                Mixed-reality application work integrating software, 3D interaction and Microsoft
+                HoloLens capabilities as part of experimental and enterprise-focused development.
+              </p>
+
+              <div class="tag-row">
+                <span>HoloLens</span>
+                <span>Mixed Reality</span>
+                <span>Azure AI</span>
+                <span>3D Interaction</span>
+              </div>
+
+              <a class="demo-link" href="projects.html">
+                View engineering projects <span>↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section" id="expertise">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">Core expertise</div>
+            <h2>Technology with business context.</h2>
+          </div>
+          <p>
+            My strongest work sits at the intersection of backend engineering, modern frontend development,
+            cloud infrastructure and workflow automation, on top of the system architecture.
+          </p>
+        </div>
+
+        <div class="skill-cloud reveal delay-1">
+          <span>C#</span>
+          <span>.NET / ASP.NET Core</span>
+          <span>Python</span>
+          <span>Angular</span>
+          <span>TypeScript</span>
+          <span>Vue.js</span>
+          <span>React</span>
+          <span>Azure</span>
+          <span>AWS</span>
+          <span>SQL Server & MongoDB & PostgreSQL</span>
+          <span>Clean Architecture</span>
+          <span>CQRS</span>
+          <span>OAuth 2.0</span>
+          <span>Unit / Integration Testing</span>
+          <span>Microservices</span>
+          <span>REST / SOAP APIs</span>
+          <span>EF Core</span>
+          <span>Redis</span>
+          <span>Kafka & RabbitMQ</span>
+          <span>Azure Service Bus</span>
+          <span>Docker</span>
+          <span>CI/CD</span>
+          <span>Integrations</span>
+          <span>Automation</span>
+          <span>AI Integrations</span>
+        </div>
+      </div>
+    </section> -->
+
     <section class="section" id="experience">
       <div class="container">
         <div class="section-heading reveal">
-          <div><div class="section-kicker">Experience</div><h2>Selected professional journey.</h2></div>
-          <a class="text-link" href="assets/resume/Avaz_Garayev_Resume.pdf" target="_blank">Full resume ↗</a>
+          <div>
+            <div class="section-kicker">Experience</div>
+            <h2>Selected professional journey.</h2>
+          </div>
+          <a class="text-link" href="./assets/resume/Avaz_Garayev_Resume.pdf" target="_blank">Full resume ↗</a>
         </div>
 
         <div class="timeline">
@@ -133,8 +438,14 @@
               <div>
                 <p class="company">Smart Solutions Group · Baku</p>
                 <h3>Senior Back-End Engineer</h3>
-                <p>Developing backend functionality for Azerbaijan’s public e-procurement platform and SOCAR procurement solutions; building APIs, business workflows, integrations and resolving production-level backend and environment issues.</p>
-                <div class="tag-row"><span>.NET</span><span>SQL</span><span>Integrations</span><span>Enterprise Systems</span></div>
+                <p>
+                  Developing backend functionality for Azerbaijan’s public e-procurement platform and SOCAR procurement
+                  solutions; building APIs, business workflows, integrations and resolving production-level backend
+                  and environment issues.
+                </p>
+                <div class="tag-row">
+                  <span>.NET</span><span>SQL</span><span>Integrations</span><span>Enterprise Systems</span>
+                </div>
               </div>
             </div>
           </article>
@@ -147,8 +458,13 @@
               <div>
                 <p class="company">Baku Slavic University · Baku</p>
                 <h3>Software Engineer · Website Administrator</h3>
-                <p>Leading website coordination and engineering the university platform with .NET 8 MVC, reusable modules, integrations, caching, messaging and cloud storage.</p>
-                <div class="tag-row"><span>.NET 8 MVC</span><span>EF Core</span><span>Azure Blob</span><span>Redis</span><span>RabbitMQ</span></div>
+                <p>
+                  Leading website coordination and engineering the university platform with .NET 8 MVC,
+                  reusable modules, integrations, caching, messaging and cloud storage.
+                </p>
+                <div class="tag-row">
+                  <span>.NET 8 MVC</span><span>EF Core</span><span>Azure Blob</span><span>Redis</span><span>RabbitMQ</span>
+                </div>
               </div>
             </div>
           </article>
@@ -161,8 +477,13 @@
               <div>
                 <p class="company">Microsoft · Kraków</p>
                 <h3>Cloud Engineer</h3>
-                <p>Supported Azure App Services and cross-resource scenarios involving VNets, AKS, managed identities, Azure Functions, Key Vault, Storage, CI/CD, Application Insights and Service Bus.</p>
-                <div class="tag-row"><span>Azure</span><span>App Service</span><span>AKS</span><span>VNet</span><span>CI/CD</span></div>
+                <p>
+                  Supported Azure App Services and cross-resource scenarios involving VNets, AKS, managed identities,
+                  Azure Functions, Key Vault, Storage, CI/CD, Application Insights and Service Bus.
+                </p>
+                <div class="tag-row">
+                  <span>Azure</span><span>App Service</span><span>AKS</span><span>VNet</span><span>CI/CD</span>
+                </div>
               </div>
             </div>
           </article>
@@ -175,86 +496,128 @@
               <div>
                 <p class="company">Rabalon LLC · Baku</p>
                 <h3>Software Engineer</h3>
-                <p>Worked on full-stack enterprise web applications, API integrations, Azure AI, HoloLens solutions, containerized applications and business automations using OpenAI, WhatsApp and Telegram APIs.</p>
-                <div class="tag-row"><span>C#</span><span>Angular</span><span>Azure AI</span><span>Docker</span><span>Automation</span></div>
+                <p>
+                  Worked on full-stack enterprise web applications, API integrations, Azure AI, HoloLens solutions,
+                  containerized applications and business automations using OpenAI, WhatsApp and Telegram APIs.
+                </p>
+                <div class="tag-row">
+                  <span>C#</span><span>Angular</span><span>Azure AI</span><span>Docker</span><span>Automation</span>
+                </div>
               </div>
             </div>
           </article>
-           <article class="timeline-item reveal">
-  <div class="timeline-date">Jan 2021 — Present</div>
-  <div class="timeline-dot"></div>
 
-  <div class="experience-card glass tilt-card">
-    <div class="company-mark">🧑‍💻</div>
-
-    <div>
-      <p class="company">AvazG Tech · Baku · Krakow</p>
-
-      <h3>Founder & Senior Software Engineer</h3>
-
-      <p>
-        Building custom software products and business solutions, from scalable
-        web platforms and cloud systems to AI-powered integrations and workflow
-        automation. Focused on turning real business needs into reliable,
-        maintainable and value-driven technology.
-      </p>
-
-      <div class="tag-row">
-        <span>Software Architecture</span>
-        <span>Full-Stack</span>
-        <span>Cloud</span>
-        <span>AI & Integrations</span>
-        <span>Automation</span>
-      </div>
-    </div>
-  </div>
-</article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Jan 2021 — Present</div>
+            <div class="timeline-dot"></div>
+            <div class="experience-card glass tilt-card">
+              <div class="company-mark founder-mark">AG</div>
+              <div>
+                <p class="company">AvazG Tech · Baku · Krakow</p>
+                <h3>Founder & Senior Software Engineer</h3>
+                <p>
+                  Building custom software products and business solutions, from scalable web platforms and cloud
+                  systems to AI-powered integrations and workflow automation. Focused on turning real business needs
+                  into reliable, maintainable and value-driven technology.
+                </p>
+                <div class="tag-row">
+                  <span>Software Architecture</span>
+                  <span>Full-Stack</span>
+                  <span>Cloud</span>
+                  <span>AI & Integrations</span>
+                  <span>Automation</span>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="featured-work">
+    <!-- <section class="section" id="featured-work">
       <div class="container">
         <div class="section-heading reveal">
-          <div><div class="section-kicker">Featured work</div><h2>Projects built for complexity.</h2></div>
+          <div>
+            <div class="section-kicker">Featured work</div>
+            <h2>Projects built for complexity.</h2>
+          </div>
           <a class="text-link" href="projects.html">View all projects →</a>
         </div>
+
         <div class="project-grid">
           <article class="project-card glass reveal tilt-card">
             <div class="project-art art-procurement"><span>PROCURE</span><i></i></div>
             <div class="project-meta"><span>Enterprise</span><span>.NET</span></div>
             <h3>Procurement Platforms</h3>
-            <p>Complex tendering, evaluation, approvals, supplier participation and contract workflows for large-scale enterprise and public-sector environments.</p>
-            <a href="projects.html">Case study template →</a>
+            <p>
+              Complex tendering, evaluation, approvals, supplier participation and contract workflows for
+              large-scale enterprise and public-sector environments.
+            </p>
+            <a href="projects.html">View projects →</a>
           </article>
+
           <article class="project-card glass reveal delay-1 tilt-card">
             <div class="project-art art-cloud"><span>AZURE</span><i></i></div>
             <div class="project-meta"><span>Cloud</span><span>Platform</span></div>
             <h3>Cloud Operations & Integrations</h3>
-            <p>App Services, VNets, AKS, Function Apps, observability and asynchronous integration patterns built around reliable Azure workloads.</p>
-            <a href="projects.html">Case study template →</a>
+            <p>
+              App Services, VNets, AKS, Function Apps, observability and asynchronous integration patterns built
+              around reliable Azure workloads.
+            </p>
+            <a href="projects.html">View projects →</a>
           </article>
+
           <article class="project-card glass reveal delay-2 tilt-card">
             <div class="project-art art-automation"><span>AUTOMATE</span><i></i></div>
             <div class="project-meta"><span>Automation</span><span>APIs</span></div>
             <h3>Business Automation Systems</h3>
-            <p>Workflow automation and API integrations that reduce repetitive work and connect internal systems with external services.</p>
-            <a href="projects.html">Case study template →</a>
+            <p>
+              Workflow automation and API integrations that reduce repetitive work and connect internal systems
+              with external services.
+            </p>
+            <a href="projects.html">View projects →</a>
           </article>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="section" id="writing">
       <div class="container">
         <div class="section-heading reveal">
-          <div><div class="section-kicker">Writing</div><h2>Engineering notes & practical ideas.</h2></div>
+          <div>
+            <div class="section-kicker">Writing</div>
+            <h2>Engineering notes & practical ideas.</h2>
+          </div>
           <a class="text-link" href="blog.html">Visit blog →</a>
         </div>
+
         <div class="blog-preview-grid">
-          <article class="blog-card glass reveal"><div class="blog-icon">⌬</div><div><span>Architecture</span><h3>Designing scalable .NET systems without over-engineering</h3><p>A practical framework for making architecture decisions that stay maintainable as requirements grow.</p></div></article>
-          <article class="blog-card glass reveal delay-1"><div class="blog-icon">☁</div><div><span>Cloud</span><h3>Azure integration patterns I keep coming back to</h3><p>How App Services, messaging, monitoring and network design fit together in real systems.</p></div></article>
-          <article class="blog-card glass reveal delay-2"><div class="blog-icon">↻</div><div><span>Automation</span><h3>Where automation actually creates business value</h3><p>Choosing processes worth automating and avoiding automation that only creates new maintenance work.</p></div></article>
+          <article class="blog-card glass reveal">
+            <div class="blog-icon">⌬</div>
+            <div>
+              <span>Architecture</span>
+              <h3>Designing scalable .NET systems without over-engineering</h3>
+              <p>A practical framework for making architecture decisions that stay maintainable as requirements grow.</p>
+            </div>
+          </article>
+
+          <article class="blog-card glass reveal delay-1">
+            <div class="blog-icon">☁</div>
+            <div>
+              <span>Cloud</span>
+              <h3>Azure integration patterns I keep coming back to</h3>
+              <p>How App Services, messaging, monitoring and network design fit together in real systems.</p>
+            </div>
+          </article>
+
+          <article class="blog-card glass reveal delay-2">
+            <div class="blog-icon">↻</div>
+            <div>
+              <span>Automation</span>
+              <h3>Where automation actually creates business value</h3>
+              <p>Choosing processes worth automating and avoiding automation that only creates new maintenance work.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -263,15 +626,36 @@
       <div class="container credentials-grid">
         <div class="credential-card glass reveal">
           <div class="section-kicker">Certification</div>
-          <div class="cert-line"><div class="cert-icon">▦</div><div><h3>Microsoft Certified: Azure Fundamentals</h3><p>AZ-900 · Microsoft</p></div></div>
-          <div class="cert-line"><div class="cert-icon">📚</div><div><h3>IELTS</h3><p>Band 6.5 · British Council</p></div></div>
-          <div class="cert-line"><div class="cert-icon">🎯</div><div><h3>Creative and Adaptive Leadership Program</h3><p>CCEI</p></div></div>
+          <div class="cert-line">
+            <div class="cert-icon">▦</div>
+            <div>
+              <h3>Microsoft Certified: Azure Fundamentals</h3>
+              <p>AZ-900 · Microsoft</p>
+            </div>
+          </div>
+          <div class="cert-line">
+            <div class="cert-icon">📚</div>
+            <div>
+              <h3>IELTS</h3>
+              <p>Band 6.5 · British Council</p>
+            </div>
+          </div>
+          <div class="cert-line">
+            <div class="cert-icon">🎯</div>
+            <div>
+              <h3>Creative and Adaptive Leadership Program</h3>
+              <p>CCEI</p>
+            </div>
+          </div>
         </div>
+
         <div class="credential-card glass reveal delay-1">
           <div class="section-kicker">Education</div>
-          <h3>WSB University</h3><p>Master · Software and applications development and analysis · Poland</p>
+          <h3>WSB University</h3>
+          <p>Master · Software and applications development and analysis · Poland</p>
           <hr />
-          <h3>Azerbaijan State Oil and Industry University</h3><p>Bachelor · Software and applications development and analysis · Azerbaijan</p>
+          <h3>Azerbaijan State Oil and Industry University</h3>
+          <p>Bachelor · Software and applications development and analysis · Azerbaijan</p>
         </div>
       </div>
     </section>
@@ -281,12 +665,16 @@
         <div class="cta glass reveal">
           <div>
             <div class="section-kicker">Let’s build</div>
-            <h2>Have a complex system, cloud challenge or process to automate?</h2>
-            <p>I’m open to meaningful engineering work, technical collaboration and business-focused product ideas.</p>
+            <h2>Have a complex system, AI opportunity, cloud challenge or process to automate?</h2>
+            <p>
+              I’m open to meaningful engineering work, technical collaboration, business-focused software products
+              and AI solution opportunities.
+            </p>
           </div>
+
           <div class="cta-actions">
             <a class="btn btn-primary magnetic" href="mailto:avazgarayev@gmail.com">Email me <span>↗</span></a>
-            <a class="btn btn-ghost magnetic" href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+            <a class="btn btn-ghost magnetic" href="your-ai-department.html">AI solutions <span>↗</span></a>
           </div>
         </div>
       </div>
@@ -295,13 +683,38 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div><a class="brand" href="#top"><img src="assets/img/portrait-clean.png" alt="" /><span>Avaz Garayev</span></a><p>Senior Software Engineer · Full-Stack · Cloud · Automation</p></div>
-      <div><b>Navigate</b><a href="#about">About</a><a href="#experience">Experience</a><a href="projects.html">Projects</a><a href="blog.html">Blog</a></div>
-      <div><b>Connect</b><a href="mailto:avazgarayev@gmail.com">avazgarayev@gmail.com</a><a href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noreferrer">LinkedIn</a><a href="assets/resume/Avaz_Garayev_Resume.pdf" target="_blank">Resume</a></div>
+      <div>
+        <a class="brand" href="#top">
+          <img src="./assets/img/portrait-clean.png" alt="" />
+          <span>Avaz Garayev</span>
+        </a>
+        <p>Founder · Senior Software Engineer · Full-Stack · Cloud · Automation</p>
+      </div>
+
+      <div>
+        <b>Navigate</b>
+        <a href="#about">About</a>
+        <a href="#what-i-solve">What I Solve</a>
+        <a href="#experience">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="your-ai-department.html">Your AI Department</a>
+      </div>
+
+      <div>
+        <b>Connect</b>
+        <a href="mailto:avazgarayev@gmail.com">avazgarayev@gmail.com</a>
+        <a href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="./assets/resume/Avaz_Garayev_Resume.pdf" target="_blank">Resume</a>
+      </div>
     </div>
-    <div class="container footer-bottom"><span>© <span data-year></span> Avaz Garayev</span><span>Designed for clarity, performance and value.</span></div>
+
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> Avaz Garayev</span>
+      <span>Designed for clarity, performance and value.</span>
+    </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
