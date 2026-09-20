@@ -56,6 +56,13 @@ Where available, posts link to the original **Medium, LinkedIn, GitHub, or live 
 
 ## Project Structure
 
+The navbar and footer navigation on every page are rendered by `assets/js/navigation.js` and styled in
+`assets/css/style.css`. Update navigation labels, links and dropdowns in that
+shared script so Home, Projects, Blog and Your AI Department stay synchronized.
+The shared silver and slate color palette lives in `assets/css/theme.css`, loaded
+last on every page. Homepage portrait labels are generated from the metric titles
+in `index.html`, so changing a title also updates its label around the portrait.
+
 ```text
 .
 ├── index.html

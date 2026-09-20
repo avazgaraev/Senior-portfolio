@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Production engineering notes by Avaz Garayev on .NET, architecture, AI, integrations, automation, performance and product engineering." />
-  <meta name="theme-color" content="#050b14" />
+  <meta name="theme-color" content="#edf0f2" />
   <title>Blog — Avaz Garayev</title>
   <link rel="icon" href="assets/img/portrait-clean.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +26,24 @@
     }
     .featured-blog-image img {
       min-height: 320px;
+    }
+    .featured-voice .featured-blog-image {
+      display: flex;
+      align-items: center;
+      background: #071a31;
+    }
+    .featured-voice .featured-blog-image::before,
+    .featured-voice .featured-blog-image::after {
+      display: none;
+    }
+    .featured-voice .featured-blog-image img {
+      height: auto;
+      min-height: 0;
+      object-fit: contain;
+    }
+    .featured-voice h2 {
+      font-size: clamp(1.85rem, 2.6vw, 2.5rem);
+      line-height: 1.12;
     }
     .featured-blog-copy {
       display: flex;
@@ -107,10 +125,12 @@
     }
   </style>
 
+  <link rel="stylesheet" href="assets/css/theme.css" />
 </head>
 <body data-page="blog">
   <div class="cursor-glow" aria-hidden="true"></div><div class="noise" aria-hidden="true"></div>
-  <header class="site-header"><div class="container nav-shell"><a class="brand" href="index.html"><img src="assets/img/portrait-clean.png" alt=""/><span>Avaz Garayev</span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button><nav class="nav-links"><a href="index.html">Home</a><a href="index.html#about">About</a><a href="index.html#experience">Experience</a><a href="projects.html">Projects</a><a class="active" href="blog.html">Blog</a><a href="index.html#contact">Contact</a></nav><div class="nav-actions"><a class="icon-link" href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noreferrer">in</a><a class="icon-link" href="mailto:avazgarayev@gmail.com">@</a><a class="btn btn-ghost btn-small" href="assets/resume/Avaz_Garayev_Resume.pdf" target="_blank">Resume ↗</a></div></div></header>
+  <header class="site-header" id="top" data-site-header></header>
+  <script src="assets/js/navigation.js"></script>
 
 
   <main>
@@ -126,18 +146,17 @@
       <div class="container blog-layout">
         <div class="blog-main">
           
-      <article class="featured-article glass reveal">
+      <article class="featured-article featured-voice glass reveal">
         <div class="featured-blog-art featured-blog-image">
-          <img src="assets/img/blog/bsu-localization.png" alt="Baku Slavic University localization article cover" />
+          <img src="assets/img/blog/azerbaijani-voice-ai.jpg" alt="GaraTech article cover: GPT-Live-1 in the API" width="800" height="800" />
         </div>
         <div class="featured-blog-copy">
-          <div class="section-kicker">Featured engineering article</div>
-          <div class="article-meta">August 2, 2026 · Software Architecture · Localization · SEO</div>
-          <h2>Reviewing AI-Generated Localization Architecture: Routing, Culture Strategy &amp; SEO</h2>
-          <p>A production-focused analysis of localization choices for the Baku Slavic University website: when route-based language handling is preferable, how localization decisions affect indexing and SEO, and why engineers still need to critically review architecture and code proposed by AI systems.</p>
-          <div class="tag-row"><span>.NET</span><span>Localization</span><span>SEO</span><span>Architecture</span></div>
-          <div class="article-links"><a class="article-link" href="https://lnkd.in/ds_dDX_G" target="_blank" rel="noreferrer">Read on Medium <span>↗</span></a><a class="article-link" href="https://www.linkedin.com/posts/avaz-garayev_ham%C4%B1ya-salam-bu-g%C3%BCn-s%C3%BCni-i%CC%87ntellekt-activity-7489707241445650432-ZOdy?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAADZH8aQBVAiwhsWH8gLUrUp-QdX3C1wvauM" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a></div>
-          <small class="article-note">Article language: Azerbaijani</small>
+          <div class="section-kicker">Latest engineering article</div>
+          <div class="article-meta">September 19, 2026 · Voice AI · AI Orchestration</div>
+          <h2>Building an Azerbaijani Voice AI with GPT-Live 1</h2>
+          <p>An exploration of Azerbaijani voice interaction with GPT-Live 1, paired with GPT-5.6 Terra for complex reasoning, research and tool use. The write-up covers the system architecture, orchestration challenges and observations on the naturalness of Azerbaijani speech.</p>
+          <div class="tag-row"><span>Voice AI</span><span>GPT-Live 1</span><span>AI Orchestration</span><span>GaraTech</span></div>
+          <div class="article-links"><a class="article-link" href="https://medium.com/@avazgarayev/building-an-azerbaijani-voice-ai-with-gpt-live-1-5434c6044337" target="_blank" rel="noreferrer">Read on Medium <span>↗</span></a><a class="article-link" href="https://lnkd.in/p/dCH5vZ2Q" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a></div>
         </div>
       </article>
 
@@ -152,7 +171,16 @@
           </div>
 
           <div class="article-grid" data-filter-items>
-            
+
+        <article class="article-card glass reveal" data-category="architecture dotnet">
+          <div class="article-thumb image-thumb"><img loading="lazy" src="assets/img/blog/bsu-localization.png" alt="Baku Slavic University localization article cover" /></div>
+          <div class="article-meta">August 2, 2026 · Software Architecture · Localization · SEO</div>
+          <h3>Reviewing AI-Generated Localization Architecture: Routing, Culture Strategy &amp; SEO</h3>
+          <p>A production-focused analysis of localization choices for the Baku Slavic University website: when route-based language handling is preferable, how localization decisions affect indexing and SEO, and why engineers still need to critically review architecture and code proposed by AI systems.</p>
+          <div class="tag-row"><span>.NET</span><span>Localization</span><span>SEO</span><span>Architecture</span></div>
+          <div class="article-links"><a class="article-link" href="https://lnkd.in/ds_dDX_G" target="_blank" rel="noreferrer">Read on Medium <span>↗</span></a><a class="article-link" href="https://www.linkedin.com/posts/avaz-garayev_ham%C4%B1ya-salam-bu-g%C3%BCn-s%C3%BCni-i%CC%87ntellekt-activity-7489707241445650432-ZOdy?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAADZH8aQBVAiwhsWH8gLUrUp-QdX3C1wvauM" target="_blank" rel="noreferrer">LinkedIn post <span>↗</span></a></div>
+          <small class="article-note">Article language: Azerbaijani</small>
+        </article>
         <article class="article-card glass reveal" data-category="ai architecture dotnet">
           <div class="article-thumb image-thumb"><img loading="lazy" src="assets/img/blog/bsu-information-assistant-architecture.png" alt="BSU information assistant illustration" /></div>
           <div class="article-meta">June 27, 2026 · AI &amp; Knowledge Systems · .NET Architecture</div>
@@ -309,7 +337,7 @@
   </main>
 
 
-  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><img src="assets/img/portrait-clean.png" alt=""/><span>Avaz Garayev</span></a><p>Senior Software Engineer · Full-Stack · Cloud · Automation</p></div><div><b>Navigate</b><a href="index.html#about">About</a><a href="index.html#experience">Experience</a><a href="projects.html">Projects</a><a href="blog.html">Blog</a></div><div><b>Connect</b><a href="mailto:avazgarayev@gmail.com">avazgarayev@gmail.com</a><a href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noreferrer">LinkedIn</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> Avaz Garayev</span><span>Notes on architecture, AI, automation and product engineering.</span></div></footer>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><img src="assets/img/portrait-clean.png" alt=""/><span>Avaz Garayev</span></a><p>Senior Software Engineer · Full-Stack · Cloud · Automation</p></div><div data-footer-navigation></div><div><b>Connect</b><a href="mailto:avazgarayev@gmail.com">avazgarayev@gmail.com</a><a href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noreferrer">LinkedIn</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> Avaz Garayev</span><span>Notes on architecture, AI, automation and product engineering.</span></div></footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -4,48 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Avaz Garayev — Founder & Senior Software Engineer building enterprise software, cloud systems, business automation and AI-powered solutions." />
-  <meta name="theme-color" content="#050b14" />
-  <title>Avaz Garayev — Founder & Senior Software Engineer</title>
+  <meta name="theme-color" content="#edf0f2" />
+  <title>Avaz Garayev</title>
   <link rel="icon" href="./assets/img/portrait-clean.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/your-ai.css" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
 </head>
 <body data-page="home">
   <div class="cursor-glow" aria-hidden="true"></div>
   <div class="noise" aria-hidden="true"></div>
 
-  <header class="site-header" id="top">
-    <div class="container nav-shell">
-      <a class="brand" href="index.html" aria-label="Avaz Garayev home">
-        <img src="./assets/img/portrait-clean.png" alt="" />
-        <span>Avaz Garayev</span>
-      </a>
-
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span>
-      </button>
-
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#what-i-solve">What I Solve</a>
-        <a href="#experience">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a class="nav-ai-link" href="your-ai-department.html">Your AI Department</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="nav-actions">
-        <a class="icon-link" href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
-        <a class="icon-link" href="mailto:avazgarayev@gmail.com" aria-label="Email">@</a>
-        <a class="btn btn-ghost btn-small" href="./assets/resume/Avaz_Garayev_Resume.pdf" target="_blank">Resume <span>↗</span></a>
-      </div>
-    </div>
-  </header>
+  <header class="site-header" id="top" data-site-header></header>
+  <script src="assets/js/navigation.js"></script>
 
   <main>
     <section class="hero section" id="home">
@@ -61,7 +35,7 @@
           <h1>Engineering software that creates <span class="gradient-text">measurable value.</span></h1>
 
           <p class="hero-role hero-role-founder">
-            Founder, Your AI Department
+            Founder, Gara Tech
             <span>·</span>
             Senior Software Engineer
             <span>·</span>
@@ -72,22 +46,12 @@
             Automation
           </p>
 
-          <p class="hero-lead">
-            I design and build scalable enterprise applications, cloud-connected systems, business automation
-            and AI-powered products. My work combines clean architecture, reliable integrations and pragmatic
-            engineering to turn complex business requirements into useful, maintainable technology.
-          </p>
-
           <div class="hero-actions">
             <a class="btn btn-primary magnetic" href="#what-i-solve">What I Solve <span>↓</span></a>
             <a class="btn btn-ghost magnetic" href="your-ai-department.html">Explore Your AI Department <span>↗</span></a>
           </div>
 
           <div class="metrics">
-            <div class="metric">
-              <strong>5+ Years</strong>
-              <span>Building production software</span>
-            </div>
             <div class="metric">
               <strong>Enterprise Systems</strong>
               <span>Architecture · APIs · Microservices</span>
@@ -100,10 +64,14 @@
               <strong>Business Automation</strong>
               <span>Integrations · AI · Workflow Automation</span>
             </div>
+            <div class="metric">
+              <strong>Your AI Department</strong>
+              <span>GaraTech · Conversational AI · Voice Assistants · Intelligent Workflows</span>
+            </div>
           </div>
         </div>
 
-        <div class="hero-visual reveal delay-1 top-margin">
+        <div class="hero-visual reveal delay-1">
           <div class="portrait-stage tilt-card">
             <div class="tech-ring ring-1"></div>
             <div class="tech-ring ring-2"></div>
@@ -112,9 +80,7 @@
               <img src="./assets/img/portrait-clean.png" alt="Portrait of Avaz Garayev" />
             </div>
 
-            <div class="floating-badge badge-one"><span>01</span><b>Software Architecture</b></div>
-            <div class="floating-badge badge-two"><span>02</span><b>Cloud & Automation</b></div>
-            <div class="floating-badge badge-three"><span>03</span><b>AI Business Solutions</b></div>
+            <div class="portrait-badges" data-portrait-badges aria-hidden="true"></div>
           </div>
         </div>
       </div>
@@ -131,29 +97,38 @@
         <div class="section-kicker reveal">About me</div>
 
         <div class="about-panel glass reveal">
-          <div class="about-title">
-            <h2>I build software around <span class="gradient-text">real business problems.</span></h2>
-          </div>
-
           <div class="about-copy">
+            <h2>I build software around <span class="gradient-text">real business problems.</span></h2>
             <p>
-              I’m a Founder and Senior Software Engineer with experience across enterprise application development,
-              cloud engineering, integrations and automation. I work across the full solution lifecycle — from
-              understanding a business problem and shaping the architecture to implementation, integration,
+              I’m the Founder of <strong>GaraTech</strong> and a Senior Software Engineer with more than 5 years of experience across enterprise
+              application development, cloud engineering, integrations and automation. I work across the full SDLC,
+              from understanding a business problem and shaping the architecture to implementation, integration,
               deployment and continuous improvement.
             </p>
             <p>
-              Alongside engineering work, I’m building <strong>Your AI Department</strong> — a business-focused AI
-              solutions direction centered on practical AI systems, intelligent automation, conversational interfaces
-              and AI-enabled workflows rather than AI for its own sake.
+              At GaraTech, I’m building <strong>Your AI Department</strong>, which means a business-focused approach to
+              designing, integrating and maintaining practical AI solutions. My work includes conversational assistants,
+              voice receptionists, interactive digital humans and AI-enabled workflows, alongside custom business
+              applications and integrations with existing systems.
+            </p>
+            <p>
+              GaraTech grew out of my experience building business software and applying AI to real projects. My motivation
+              is to help businesses turn emerging technology into useful, dependable tools for their everyday operations.
+              I’m building GaraTech to become a long-term engineering partner: identifying where AI can help, delivering
+              solutions around actual business needs and improving them as those needs evolve.
             </p>
           </div>
 
-          <div class="about-points">
-            <div><span>◇</span> Clean architecture & SOLID</div>
-            <div><span>◈</span> Scalable APIs & integrations</div>
-            <div><span>⌁</span> Cloud-native engineering</div>
-            <div><span>↻</span> Business process automation</div>
+          <div class="about-gallery" role="group" aria-label="A look at my workday">
+            <figure class="about-photo about-photo-wide">
+              <img src="assets/img/about/IMG_5.png" alt="An office presentation with a digital avatar on a large display" width="1673" height="940" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="about-photo about-photo-workspace">
+              <img src="assets/img/about/IMG_6.png" alt="Developing software with a laptop and an external monitor" width="1086" height="1448" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="about-photo about-photo-notes">
+              <img src="assets/img/about/IMG_3.jpg" alt="Taking notes during a work session" width="1170" height="2052" loading="lazy" decoding="async" />
+            </figure>
           </div>
         </div>
       </div>
@@ -513,7 +488,7 @@
             <div class="experience-card glass tilt-card">
               <div class="company-mark founder-mark">AG</div>
               <div>
-                <p class="company">AvazG Tech · Baku · Krakow</p>
+                <p class="company">Gara Tech · Baku · Krakow</p>
                 <h3>Founder & Senior Software Engineer</h3>
                 <p>
                   Building custom software products and business solutions, from scalable web platforms and cloud
@@ -691,15 +666,7 @@
         <p>Founder · Senior Software Engineer · Full-Stack · Cloud · Automation</p>
       </div>
 
-      <div>
-        <b>Navigate</b>
-        <a href="#about">About</a>
-        <a href="#what-i-solve">What I Solve</a>
-        <a href="#experience">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a href="your-ai-department.html">Your AI Department</a>
-      </div>
+      <div data-footer-navigation></div>
 
       <div>
         <b>Connect</b>

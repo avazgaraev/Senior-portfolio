@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Your AI Department — practical AI systems, conversational interfaces, intelligent automation and AI-enabled business workflows by Avaz Garayev." />
-  <meta name="theme-color" content="#050b14" />
+  <meta name="theme-color" content="#edf0f2" />
   <title>Your AI Department — Avaz Garayev</title>
   <link rel="icon" href="assets/img/portrait-clean.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,41 +12,15 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/your-ai.css" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
 </head>
 
 <body data-page="ai-department">
   <div class="cursor-glow" aria-hidden="true"></div>
   <div class="noise" aria-hidden="true"></div>
 
-  <header class="site-header" id="top">
-    <div class="container nav-shell">
-      <a class="brand" href="index.html" aria-label="Avaz Garayev home">
-        <img src="assets/img/portrait-clean.png" alt="" />
-        <span>Avaz Garayev</span>
-      </a>
-
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span>
-      </button>
-
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#what-i-solve">What I Solve</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a class="active nav-ai-link" href="your-ai-department.html">Your AI Department</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-
-      <div class="nav-actions">
-        <a class="icon-link" href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
-        <a class="icon-link" href="mailto:avazgarayev@gmail.com" aria-label="Email">@</a>
-        <a class="btn btn-ghost btn-small" href="assets/resume/Avaz_Garayev_Resume.pdf" target="_blank">Resume <span>↗</span></a>
-      </div>
-    </div>
-  </header>
+  <header class="site-header" id="top" data-site-header></header>
+  <script src="assets/js/navigation.js"></script>
 
   <main>
     <section class="ai-hero section">
@@ -378,14 +352,7 @@
         <p>Founder · Senior Software Engineer · Full-Stack · Cloud · Automation</p>
       </div>
 
-      <div>
-        <b>Navigate</b>
-        <a href="index.html">Home</a>
-        <a href="index.html#what-i-solve">What I Solve</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a href="your-ai-department.html">Your AI Department</a>
-      </div>
+      <div data-footer-navigation></div>
 
       <div>
         <b>Connect</b>

@@ -4,17 +4,19 @@
 
   $$('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
 
-  const menuButton = $('.menu-toggle');
-  const nav = $('.nav-links');
-  if (menuButton && nav) {
-    menuButton.addEventListener('click', () => {
-      const open = nav.classList.toggle('open');
-      menuButton.setAttribute('aria-expanded', String(open));
+  // Portrait labels follow the metric titles, keeping both views in sync.
+  const portraitBadges = $('[data-portrait-badges]');
+  if (portraitBadges) {
+    $$('.metrics .metric strong').forEach((title, index) => {
+      const badge = document.createElement('div');
+      badge.className = `floating-badge badge-${index + 1}`;
+      const number = document.createElement('span');
+      number.textContent = String(index + 1).padStart(2, '0');
+      const label = document.createElement('b');
+      label.textContent = title.textContent;
+      badge.append(number, label);
+      portraitBadges.append(badge);
     });
-    $$('.nav-links a').forEach(a => a.addEventListener('click', () => {
-      nav.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
-    }));
   }
 
   const observer = new IntersectionObserver(entries => {

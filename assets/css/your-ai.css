@@ -250,9 +250,9 @@
 }
 
 .ai-hero h1{
-  font-size:clamp(3.2rem,7vw,6.2rem);
-  line-height:.97;
-  letter-spacing:-.055em;
+  font-size:var(--hero-title-size);
+  line-height:1.1;
+  letter-spacing:-.04em;
   margin-bottom:24px;
   max-width:860px;
 }
