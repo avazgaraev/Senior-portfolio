@@ -1,0 +1,37 @@
+GARA RESIDENCE — ILLUSTRATIVE IMAGE REFERENCES
+
+All photography is used as visual reference in a fictional portfolio
+demonstration. These images do not depict a Gara Residence development.
+No affiliation with the buildings, architects or photographers is implied.
+Before public commercial use, confirm appropriate rights or replace the
+reference photography with commissioned or properly licensed imagery.
+
+architecture.jpg
+Valencia residential tower, MoederscheimMoonen Architects.
+Source: https://architizer.com/projects/residential-tower-valencia/
+Image: https://architizer-prod.imgix.net/media/mediadata/uploads/1677840295114210502-23.jpg
+
+tower.jpg
+Screen 504, Sanjay Puri Architects.
+Source: https://www.archilovers.com/projects/335373/screen-504.html
+Image: https://cdn.archilovers.com/projects/6deb4c22-2609-4008-84e0-31aa8c15a2af.jpg
+
+Interior, city, garden and structure reference imagery from Unsplash:
+living.jpg: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0
+interior.jpg: https://images.unsplash.com/photo-1600607687920-4e2a09cf159d
+kitchen.jpg: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea
+bedroom.jpg: https://images.unsplash.com/photo-1611892440504-42a792e24d32
+garden.jpg: https://images.unsplash.com/photo-1441974231531-c6227db76b6e
+courtyard.jpg: https://images.unsplash.com/photo-1585320806297-9794b3e4eeae
+city.jpg: https://images.unsplash.com/photo-1545324418-cc1a3fa10c00
+structure.jpg: https://images.unsplash.com/photo-1503387762-592deb58ef4e
+
+The interactive tower, floor diagrams, neighbourhood, material studies,
+masterplan, site comparison and favicon are original code-generated assets.
+Day/night and floor-view variations are explicitly labelled simulations.
+
+Typography: Italiana and DM Sans from Google Fonts, stored locally with
+their SIL Open Font License files in assets/fonts/.
+
+AI image generation was attempted using the built-in image tool but was
+unavailable due to its usage limit. No AI-generated bitmap is used.

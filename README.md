@@ -62,6 +62,10 @@ shared script so Home, Projects, Blog and Your AI Department stay synchronized.
 The shared silver and slate color palette lives in `assets/css/theme.css`, loaded
 last on every page. Homepage portrait labels are generated from the metric titles
 in `index.html`, so changing a title also updates its label around the portrait.
+The customer-facing Software Solutions page is `software-solutions.html`; its six
+static showcase projects are bundled under `showcases/` so GitHub Pages can serve
+them from this repository alone. The BSU project remains linked to its live public
+platform.
 
 ```text
 .

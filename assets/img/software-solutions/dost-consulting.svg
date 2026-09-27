@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" role="img" aria-labelledby="title desc">
+  <title id="title">Dost Consulting business compass</title>
+  <desc id="desc">A strategic map connecting Europe, Dubai and new perspectives.</desc>
+  <defs>
+    <pattern id="atlas-grid" width="35" height="35" patternUnits="userSpaceOnUse">
+      <path d="M35 0H0V35" fill="none" stroke="#c8c0b2" stroke-width=".55"/>
+    </pattern>
+    <linearGradient id="atlas-paper" x2="0" y2="1">
+      <stop stop-color="#f6f4ee"/>
+      <stop offset="1" stop-color="#e9e5da"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="440" fill="url(#atlas-paper)"/>
+  <rect width="600" height="440" fill="url(#atlas-grid)" opacity=".82"/>
+  <g fill="none" stroke="#b1a797" stroke-width=".8">
+    <ellipse cx="300" cy="220" rx="225" ry="170"/>
+    <ellipse cx="300" cy="220" rx="140" ry="170"/>
+    <ellipse cx="300" cy="220" rx="55" ry="170"/>
+    <ellipse cx="300" cy="220" rx="225" ry="65"/>
+    <path d="M75 220H525M300 50V390"/>
+  </g>
+  <g fill="none" stroke="#702f3c">
+    <path d="M175 151Q280 75 392 265M277 100Q365 120 392 265M392 265Q270 300 210 319"/>
+    <circle cx="392" cy="265" r="9"/>
+    <circle cx="392" cy="265" r="20" opacity=".25"/>
+  </g>
+  <g fill="#702f3c">
+    <circle cx="175" cy="151" r="4"/>
+    <circle cx="277" cy="100" r="4"/>
+    <circle cx="210" cy="319" r="4"/>
+    <circle cx="392" cy="265" r="4"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="9" fill="#554b42" letter-spacing=".8">
+    <text x="150" y="136">EUROPE</text>
+    <text x="410" y="269">DUBAI</text>
+    <text x="286" y="91">NEW PERSPECTIVES</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="10" fill="#702f3c" letter-spacing="2">
+    <text x="28" y="34">DOST / BUSINESS COMPASS</text>
+    <text x="28" y="416">LOCAL UNDERSTANDING.  INTERNATIONAL OUTLOOK.</text>
+  </g>
+</svg>

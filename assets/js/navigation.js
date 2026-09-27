@@ -5,9 +5,9 @@
   const page = document.body.dataset.page;
   const homeLink = section => page === 'home' ? `#${section}` : `index.html#${section}`;
   const current = name => page === name ? ' class="active" aria-current="page"' : '';
-  const garaActive = page === 'projects' || page === 'ai-department';
+  const garaActive = page === 'software-solutions' || page === 'ai-department';
   const solutions = [
-    { page: 'projects', href: 'projects.html', label: 'Software Solutions' },
+    { page: 'software-solutions', href: 'software-solutions.html', label: 'Software Solutions' },
     { page: 'ai-department', href: 'your-ai-department.html', label: 'Your AI Department' }
   ];
 
@@ -25,6 +25,7 @@
         <a href="${homeLink('home')}"${current('home')}>Home</a>
         <a href="${homeLink('about')}">About</a>
         <a href="${homeLink('experience')}">Experience</a>
+        <a href="projects.html"${current('projects')}>Projects</a>
         <div class="nav-dropdown">
           <button class="nav-dropdown-toggle${garaActive ? ' active' : ''}" type="button" aria-expanded="false" aria-controls="gara-tech-menu">
             Gara Tech <span class="nav-chevron" aria-hidden="true"></span>
@@ -37,9 +38,9 @@
         <a href="${homeLink('contact')}">Contact</a>
       </nav>
       <div class="nav-actions">
-        <a class="icon-link" href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+        <a class="icon-link" href="https://linkedin.com/in/avaz-garayev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
         <a class="icon-link" href="mailto:avazgarayev@gmail.com" aria-label="Email">@</a>
-        <a class="btn btn-ghost btn-small" href="assets/resume/Avaz_Garayev_Resume.pdf" target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-ghost btn-small" href="assets/resume/Avaz_Garayev_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume <span aria-hidden="true">↗</span></a>
       </div>
     </div>`;
 
@@ -98,6 +99,7 @@
         <b>Navigate</b>
         <a href="${homeLink('about')}">About</a>
         <a href="${homeLink('experience')}">Experience</a>
+        <a href="projects.html">Projects</a>
         ${solutions.map(item => `<a href="${item.href}">${item.label}</a>`).join('')}
         <a href="blog.html">Blog</a>`;
     });

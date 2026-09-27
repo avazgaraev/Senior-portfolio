@@ -1,0 +1,1064 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111313" />
+    <meta
+      name="description"
+      content="G-Walt Cars is a premium detailing and surface protection studio concept. Explore PPF, ceramic coating, window tint, vinyl wraps, and specialist car care."
+    />
+    <meta
+      property="og:title"
+      content="G-Walt Cars — Detailing, PPF & Surface Care"
+    />
+    <meta
+      property="og:description"
+      content="Detailing. Protection. Lasting care. A premium automotive experience by G-Walt Tech."
+    />
+    <meta property="og:type" content="website" />
+    <title>G-Walt Cars — Detailing, PPF & Surface Care</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/manrope-bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="preload" href="assets/ppf-atelier.png" as="image" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <svg
+      class="svg-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </symbol>
+      <symbol id="diagonal" viewBox="0 0 24 24">
+        <path d="M6 18 18 6M6 6h12v12" />
+      </symbol>
+    </svg>
+
+    <header class="site-header" id="header">
+      <a class="brand" href="#home" aria-label="G-Walt Cars home"
+        ><span class="brand-mark" aria-hidden="true">G</span
+        ><span
+          >G-Walt<span class="brand-light">CARS</span
+          ><small>DETAILING & PROTECTION</small></span
+        ></a
+      >
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#services">Treatments</a><a href="#showcase">Finish studies</a
+        ><a href="#packages">Care plans</a><a href="#craft">Our process</a>
+      </nav>
+      <a class="header-cta" href="#booking"
+        >Let’s talk <svg class="icon"><use href="#diagonal" /></svg
+      ></a>
+      <button
+        class="menu-toggle"
+        aria-controls="mobile-nav"
+        aria-expanded="false"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+    <nav
+      class="mobile-nav"
+      id="mobile-nav"
+      aria-label="Mobile navigation"
+      hidden
+    >
+      <a href="#home">Home</a><a href="#services">Treatments</a
+      ><a href="#showcase">Finish studies</a><a href="#packages">Care plans</a
+      ><a href="#booking">Book a consultation</a><a href="#contact">Contact</a>
+    </nav>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-media">
+          <img
+            src="assets/ppf-atelier.png"
+            width="1672"
+            height="941"
+            alt="Gloved hands carefully applying clear paint protection film to graphite bodywork"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-shade"></div>
+        <div class="hero-ambient" aria-hidden="true"></div>
+        <div class="hero-content container">
+          <p class="eyebrow">
+            <span class="status-dot"></span> DETAILING & SURFACE PROTECTION
+            STUDIO
+          </p>
+          <h1 id="hero-title">
+            Made to last.<br /><span>Cared for</span><br /><em>by hand.</em>
+          </h1>
+          <div class="hero-description">
+            <p>
+              Paint protection. Considered finishes.<br />Specialist care for
+              the car you already love.
+            </p>
+            <a class="button button-amber" href="#services"
+              >Find your treatment
+              <svg class="icon" aria-hidden="true"><use href="#diagonal" /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="hero-worknote">
+          <span class="worknote-rule"></span>
+          <p>AT THE WORKBENCH / 01</p>
+          <strong>The invisible layer.<br />The unmistakable care.</strong
+          ><a href="#booking" data-service="Paint Protection Film"
+            >Explore paint protection
+            <svg class="icon" aria-hidden="true"><use href="#diagonal" /></svg
+          ></a>
+        </div>
+        <div class="hero-bottom container">
+          <span>New Castle / BY APPOINTMENT</span
+          ><a class="scroll-cue" href="#services"
+            >EXPLORE THE STUDIO <span>↓</span></a
+          ><span>PREPARE. PROTECT. PRESERVE.</span>
+        </div>
+      </section>
+      <section class="intro container" id="about">
+        <p class="section-label">THE G-Walt APPROACH <span>01 /</span></p>
+        <div class="intro-content">
+          <h2>A better relationship<br />with <span>every surface.</span></h2>
+          <p>
+            From the first paint inspection to the final film edge, our work is
+            about what stays with your car. A clearer reflection. A finish that
+            feels yours. Protection for everyday use.
+          </p>
+        </div>
+        <div class="intro-note">
+          <span class="tiny-cross">+</span>
+          <p>DETAILING<br />PROTECTION<br />PERSONALISATION</p>
+        </div>
+      </section>
+      <section class="services section container" id="services">
+        <div class="section-heading reveal">
+          <p class="section-label">THE TREATMENT INDEX <span>02 /</span></p>
+          <h2>What does<br />your car <em>need?</em></h2>
+          <p>Start with the surface.<br />Choose the right care.</p>
+        </div>
+        <div class="treatment-layout">
+          <div
+            class="treatment-tabs"
+            role="tablist"
+            aria-label="Explore automotive treatments"
+            aria-orientation="vertical"
+          >
+            <button
+              class="treatment-tab active"
+              id="treatment-0"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="treatment-panel"
+              tabindex="0"
+              data-treatment="0"
+            >
+              <span class="treatment-index">01</span
+              ><span
+                ><strong>Paint Protection Film</strong
+                ><small>Protect the paint</small></span
+              ><svg class="icon" aria-hidden="true">
+                <use href="#diagonal" />
+              </svg></button
+            ><button
+              class="treatment-tab"
+              id="treatment-1"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="treatment-panel"
+              tabindex="-1"
+              data-treatment="1"
+            >
+              <span class="treatment-index">02</span
+              ><span
+                ><strong>Ceramic Coating</strong
+                ><small>Keep the gloss</small></span
+              ><svg class="icon" aria-hidden="true">
+                <use href="#diagonal" />
+              </svg></button
+            ><button
+              class="treatment-tab"
+              id="treatment-2"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="treatment-panel"
+              tabindex="-1"
+              data-treatment="2"
+            >
+              <span class="treatment-index">03</span
+              ><span
+                ><strong>Premium Detailing</strong
+                ><small>Reset every detail</small></span
+              ><svg class="icon" aria-hidden="true">
+                <use href="#diagonal" />
+              </svg></button
+            ><button
+              class="treatment-tab"
+              id="treatment-3"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="treatment-panel"
+              tabindex="-1"
+              data-treatment="3"
+            >
+              <span class="treatment-index">04</span
+              ><span
+                ><strong>Window Tint</strong
+                ><small>Refine the cabin</small></span
+              ><svg class="icon" aria-hidden="true">
+                <use href="#diagonal" />
+              </svg></button
+            ><button
+              class="treatment-tab"
+              id="treatment-4"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="treatment-panel"
+              tabindex="-1"
+              data-treatment="4"
+            >
+              <span class="treatment-index">05</span
+              ><span
+                ><strong>Vinyl Wrap</strong
+                ><small>Change the finish</small></span
+              ><svg class="icon" aria-hidden="true">
+                <use href="#diagonal" />
+              </svg></button
+            ><button
+              class="treatment-tab"
+              id="treatment-5"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="treatment-panel"
+              tabindex="-1"
+              data-treatment="5"
+            >
+              <span class="treatment-index">06</span
+              ><span
+                ><strong>Paint Correction</strong
+                ><small>Restore clarity</small></span
+              ><svg class="icon" aria-hidden="true">
+                <use href="#diagonal" />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="treatment-panel"
+            id="treatment-panel"
+            role="tabpanel"
+            aria-labelledby="treatment-0"
+            tabindex="0"
+          >
+            <div class="treatment-photo">
+              <img
+                id="treatment-image"
+                src="assets/ppf-atelier.png"
+                width="1672"
+                height="941"
+                loading="lazy"
+                alt="Clear paint protection film being applied by hand"
+              /><span class="treatment-photo-label"
+                >SURFACE STUDY <b id="treatment-number">01</b></span
+              >
+            </div>
+            <div class="treatment-info">
+              <p class="eyebrow" id="treatment-focus">
+                PAINT / IMPACT PROTECTION
+              </p>
+              <h3 id="treatment-title">
+                Keep the paint.<br />Take on the road.
+              </h3>
+              <p id="treatment-copy">
+                Clear film for the panels that meet the world first. Choose
+                targeted coverage or a complete body wrap, with every edge
+                considered.
+              </p>
+              <dl class="treatment-specs">
+                <div>
+                  <dt>BEST FOR</dt>
+                  <dd id="treatment-best">
+                    New paint & everyday road exposure
+                  </dd>
+                </div>
+                <div>
+                  <dt>WE CONSIDER</dt>
+                  <dd id="treatment-scope">
+                    Panel coverage, film finish & edge detail
+                  </dd>
+                </div>
+              </dl>
+              <a
+                class="text-link"
+                id="treatment-book"
+                href="#booking"
+                data-service="Paint Protection Film"
+                >Plan this treatment
+                <svg class="icon" aria-hidden="true">
+                  <use href="#diagonal" /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <noscript
+          ><p>
+            Explore PPF, ceramic coating, detailing, window tint, vinyl wrap,
+            and paint correction. Enable JavaScript to switch treatment details.
+          </p></noscript
+        >
+      </section>
+
+      <section class="story" id="craft" aria-labelledby="story-title">
+        <div class="story-sticky">
+          <img
+            class="story-image active"
+            src="assets/headlight.jpg"
+            width="1400"
+            height="933"
+            loading="lazy"
+            alt="Inspection light reflected across black paint"
+          /><img
+            class="story-image"
+            src="assets/detail.jpg"
+            width="1000"
+            height="667"
+            loading="lazy"
+            alt="Careful machine polishing during paint preparation"
+          /><img
+            class="story-image"
+            src="assets/ppf-atelier.png"
+            width="1672"
+            height="941"
+            loading="lazy"
+            alt="Gloved hands applying protective film to prepared paint"
+          />
+          <div class="story-shade"></div>
+          <div class="scan-line" aria-hidden="true"></div>
+          <span class="story-numeral" aria-hidden="true">01</span>
+          <div class="story-top container">
+            <p class="section-label">BEFORE THE FINISH <span>03 /</span></p>
+            <span class="story-note">THE WORK YOU DON’T ALWAYS SEE.</span>
+          </div>
+          <div class="story-content container">
+            <p class="eyebrow" id="story-kicker">
+              01 — UNDER THE INSPECTION LIGHT
+            </p>
+            <h2 id="story-title">Read<br /><span>the surface.</span></h2>
+            <p id="story-copy">
+              Paint condition tells us where to begin.<br />We look before we
+              recommend.
+            </p>
+          </div>
+          <div class="story-spec">
+            <span id="story-material">01 / ASSESSMENT</span
+            ><strong id="story-finish">The right treatment starts here.</strong
+            ><span class="story-spec-rule"></span
+            ><small id="story-detail"
+              >Paint condition, existing protection, and the way you use your
+              car.</small
+            >
+          </div>
+          <div
+            class="story-controls container"
+            role="group"
+            aria-label="Explore the treatment process"
+          >
+            <button class="story-step active" data-step="0" aria-pressed="true">
+              <span>01</span> Inspect<i></i></button
+            ><button class="story-step" data-step="1" aria-pressed="false">
+              <span>02</span> Prepare<i></i></button
+            ><button class="story-step" data-step="2" aria-pressed="false">
+              <span>03</span> Protect<i></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase section container" id="showcase">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-label">
+              <span class="tiny-cross">+</span> 04 / FINISH STUDIES
+            </p>
+            <h2>Different surfaces.<br />One considered approach.</h2>
+          </div>
+          <div
+            class="gallery-filters"
+            role="group"
+            aria-label="Filter showcase"
+          >
+            <button class="active" data-filter="all" aria-pressed="true">
+              All work</button
+            ><button data-filter="protection" aria-pressed="false">
+              Protection</button
+            ><button data-filter="styling" aria-pressed="false">Styling</button>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <button
+            class="project project-wide reveal"
+            data-category="styling"
+            data-project="0"
+            aria-label="View satin wrap treatment study"
+          >
+            <img
+              src="assets/hero.jpg"
+              width="1920"
+              height="1280"
+              loading="lazy"
+              alt="Matte black Lamborghini with angular lines and a low silhouette"
+            /><span class="project-tag">VINYL WRAP / SATIN FINISH</span
+            ><span class="project-info"
+              ><span
+                ><small>STUDY 01 / COLOUR & CHARACTER</small
+                ><strong>A different expression.</strong></span
+              ><span class="circle-arrow"
+                ><svg class="icon"><use href="#diagonal" /></svg></span
+            ></span>
+          </button>
+          <button
+            class="project reveal"
+            data-category="protection"
+            data-project="1"
+            aria-label="View ceramic coating treatment study"
+          >
+            <img
+              src="assets/headlight.jpg"
+              width="1400"
+              height="933"
+              loading="lazy"
+              alt="Gloss black Bentley headlight and sculpted bodywork"
+            /><span class="project-tag">CERAMIC / PROTECTION</span
+            ><span class="project-info"
+              ><span
+                ><small>STUDY 02 / PAINT CLARITY</small
+                ><strong>Depth, restored.</strong></span
+              ><span class="circle-arrow"
+                ><svg class="icon"><use href="#diagonal" /></svg></span
+            ></span>
+          </button>
+          <button
+            class="project reveal"
+            data-category="styling"
+            data-project="2"
+            aria-label="View interior detailing treatment study"
+          >
+            <img
+              src="assets/interior.jpg"
+              width="1000"
+              height="800"
+              loading="lazy"
+              alt="Black leather Ferrari cockpit with sculpted seats and precision controls"
+            /><span class="project-tag">INTERIOR / DETAILING</span
+            ><span class="project-info"
+              ><span
+                ><small>STUDY 03 / INTERIOR CARE</small
+                ><strong>Every touchpoint.</strong></span
+              ><span class="circle-arrow"
+                ><svg class="icon"><use href="#diagonal" /></svg></span
+            ></span>
+          </button>
+          <button
+            class="project project-wide reveal"
+            data-category="protection"
+            data-project="3"
+            aria-label="View paint protection treatment study"
+          >
+            <img
+              src="assets/showcase.jpg"
+              width="1200"
+              height="1800"
+              loading="lazy"
+              alt="Gloss black Subaru performance sedan in an underground garage"
+            /><span class="project-tag">PAINT PROTECTION / FINISH</span
+            ><span class="project-info"
+              ><span
+                ><small>STUDY 04 / DAILY PROTECTION</small
+                ><strong>Ready for real life.</strong></span
+              ><span class="circle-arrow"
+                ><svg class="icon"><use href="#diagonal" /></svg></span
+            ></span>
+          </button>
+        </div>
+        <p class="gallery-note">
+          A curated visual study. Stock photography illustrates our service
+          concepts.
+        </p>
+      </section>
+
+      <section class="experience section" id="experience">
+        <div class="container experience-grid">
+          <div class="experience-photo reveal">
+            <img
+              src="assets/detail.jpg"
+              width="1000"
+              height="667"
+              loading="lazy"
+              alt="A specialist polishing a vehicle panel"
+            /><span class="photo-caption"
+              >TIME SPENT WELL. / SURFACE PREPARATION</span
+            >
+          </div>
+          <div class="experience-content">
+            <p class="section-label">THE STUDIO STANDARD <span>05 /</span></p>
+            <h2>
+              The finish is only<br />as good as<br /><em>the preparation.</em>
+            </h2>
+            <div class="value-row">
+              <span>01</span>
+              <div>
+                <h3>A surface-first assessment.</h3>
+                <p>
+                  We consider paint condition, existing films, and your daily
+                  driving before choosing a treatment.
+                </p>
+              </div>
+            </div>
+            <div class="value-row">
+              <span>02</span>
+              <div>
+                <h3>Care at the edges.</h3>
+                <p>
+                  Panel edges, glass lines, trim, and touchpoints receive the
+                  same attention as the surfaces you see first.
+                </p>
+              </div>
+            </div>
+            <div class="value-row">
+              <span>03</span>
+              <div>
+                <h3>A proper handover.</h3>
+                <p>
+                  Clear care instructions, curing guidance where needed, and a
+                  maintenance plan matched to your finish.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="packages section" id="packages">
+        <div class="container">
+          <div class="care-heading">
+            <p class="section-label">YOUR CARE SCHEDULE <span>06 /</span></p>
+            <h2>Built around<br /><em>your daily drive.</em></h2>
+            <p>
+              Three starting points.<br />Final scope follows an inspection.
+            </p>
+          </div>
+          <div class="care-ledger">
+            <article class="care-row">
+              <span class="care-number">01</span>
+              <div>
+                <p class="eyebrow">CLEAN / REFRESH</p>
+                <h3>Essential Care</h3>
+                <p>For a car that needs a considered reset.</p>
+              </div>
+              <ul>
+                <li>Exterior decontamination</li>
+                <li>Interior deep clean</li>
+                <li>Protective finishing treatment</li>
+              </ul>
+              <a
+                href="#booking"
+                data-package="Essential Care"
+                aria-label="Plan Essential Care"
+                >Plan this care
+                <svg class="icon" aria-hidden="true">
+                  <use href="#diagonal" /></svg
+              ></a>
+            </article>
+            <article class="care-row">
+              <span class="care-number">02</span>
+              <div>
+                <p class="eyebrow">CORRECT / COAT</p>
+                <h3>Signature Finish</h3>
+                <p>For paint that deserves its clarity back.</p>
+              </div>
+              <ul>
+                <li>Paint enhancement</li>
+                <li>Ceramic coating</li>
+                <li>Glass & wheel detailing</li>
+              </ul>
+              <a
+                href="#booking"
+                data-package="Signature Finish"
+                aria-label="Plan Signature Finish"
+                >Plan this care
+                <svg class="icon" aria-hidden="true">
+                  <use href="#diagonal" /></svg
+              ></a>
+            </article>
+            <article class="care-row">
+              <span class="care-number">03</span>
+              <div>
+                <p class="eyebrow">PREPARE / PROTECT</p>
+                <h3>Ultimate Protection</h3>
+                <p>For a finish you want to keep.</p>
+              </div>
+              <ul>
+                <li>Paint preparation & correction</li>
+                <li>Full-body paint protection film</li>
+                <li>Compatible coating & aftercare</li>
+              </ul>
+              <a
+                href="#booking"
+                data-package="Ultimate Protection"
+                aria-label="Plan Ultimate Protection"
+                >Plan this care
+                <svg class="icon" aria-hidden="true">
+                  <use href="#diagonal" /></svg
+              ></a>
+            </article>
+          </div>
+          <div class="care-footnote">
+            <span>ALSO AVAILABLE INDIVIDUALLY</span>
+            <p>Window tint · Colour-change wraps · Targeted PPF coverage</p>
+            <a href="#booking" data-service="Help me choose"
+              >Build a personal plan ↗</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="booking section" id="booking">
+        <div class="container">
+          <div class="booking-heading reveal">
+            <div>
+              <p class="section-label">
+                <span class="tiny-cross">+</span> 07 / OPEN A CARE BRIEF
+              </p>
+              <h2>Tell us what<br />needs <em>attention.</em></h2>
+            </div>
+            <p>
+              A starting point for your treatment.<br />No commitment. No
+              guesswork.<span class="demo-label"
+                ><span class="status-dot"></span> INTERACTIVE BOOKING DEMO</span
+              >
+            </p>
+          </div>
+          <div class="booking-shell reveal">
+            <aside class="booking-aside">
+              <div>
+                <p class="eyebrow">YOUR STUDIO VISIT</p>
+                <h3>
+                  The surface.<br />The condition.<br /><span class="amber"
+                    >The right care.</span
+                  >
+                </h3>
+              </div>
+              <div class="booking-summary">
+                <span>YOUR SELECTION</span>
+                <p id="selection-summary">Your care brief starts here.</p>
+              </div>
+              <p class="booking-disclaimer">
+                Explore the experience. No personal details are collected and no
+                appointment is made.
+              </p>
+            </aside>
+            <div class="booking-main">
+              <ol class="booking-progress" aria-label="Booking steps">
+                <li class="current" aria-current="step">
+                  <span>01</span> Your goal
+                </li>
+                <li><span>02</span> Your car</li>
+                <li><span>03</span> Visit</li>
+                <li><span>04</span> Review</li>
+              </ol>
+              <form id="booking-form" novalidate>
+                <fieldset class="booking-step" data-booking-step="0">
+                  <legend>What brings you to the studio?</legend>
+                  <p class="step-description">
+                    Start with what you want to care for. We’ll shape the
+                    treatment around it.
+                  </p>
+                  <div class="goal-options">
+                    <label class="goal-option"
+                      ><input
+                        type="radio"
+                        name="goal"
+                        value="Protect"
+                        required /><span class="goal-number">01</span
+                      ><span
+                        ><strong>Protect the paint</strong
+                        ><small
+                          >New-car care, stone chips, easier upkeep.</small
+                        ></span
+                      ><span class="choice-indicator"></span></label
+                    ><label class="goal-option"
+                      ><input
+                        type="radio"
+                        name="goal"
+                        value="Restore"
+                        required /><span class="goal-number">02</span
+                      ><span
+                        ><strong>Restore the finish</strong
+                        ><small
+                          >Swirls, dull paint, or an interior reset.</small
+                        ></span
+                      ><span class="choice-indicator"></span></label
+                    ><label class="goal-option"
+                      ><input
+                        type="radio"
+                        name="goal"
+                        value="Restyle"
+                        required /><span class="goal-number">03</span
+                      ><span
+                        ><strong>Change the look</strong
+                        ><small
+                          >A new colour, finish, or window tint.</small
+                        ></span
+                      ><span class="choice-indicator"></span></label
+                    ><label class="goal-option"
+                      ><input
+                        type="radio"
+                        name="goal"
+                        value="Advice"
+                        required /><span class="goal-number">04</span
+                      ><span
+                        ><strong>Help me decide</strong
+                        ><small
+                          >An inspection and a specialist’s advice.</small
+                        ></span
+                      ><span class="choice-indicator"></span
+                    ></label>
+                  </div>
+                </fieldset>
+                <fieldset class="booking-step" data-booking-step="1" hidden>
+                  <legend>A little about your car.</legend>
+                  <p class="step-description">
+                    Choose a treatment and tell us what we’ll be working with.
+                  </p>
+                  <label class="field-label" for="service-select"
+                    >Treatment or care plan</label
+                  ><select id="service-select" name="service" required>
+                    <option value="">Select a treatment</option>
+                    <optgroup label="Specialist treatments">
+                      <option>Paint Protection Film</option>
+                      <option>Ceramic Coating</option>
+                      <option>Premium Detailing</option>
+                      <option>Window Tint</option>
+                      <option>Vinyl Wrap</option>
+                      <option>Paint Correction</option>
+                    </optgroup>
+                    <optgroup label="Care plans">
+                      <option>Essential Care</option>
+                      <option>Signature Finish</option>
+                      <option>Ultimate Protection</option>
+                    </optgroup>
+                    <option>Help me choose</option>
+                  </select>
+                  <div class="vehicle-fields">
+                    <div>
+                      <label class="field-label" for="vehicle-select"
+                        >Vehicle type</label
+                      ><select id="vehicle-select" name="vehicle" required>
+                        <option value="">Choose a vehicle type</option>
+                        <option>Hatchback / Compact</option>
+                        <option>Sedan / Estate</option>
+                        <option>Coupe / Sports</option>
+                        <option>SUV / Crossover</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label class="field-label" for="condition-select"
+                        >Current condition</label
+                      ><select id="condition-select" name="condition" required>
+                        <option value="">Choose paint condition</option>
+                        <option>New / Recently repainted</option>
+                        <option>Light wear / Swirl marks</option>
+                        <option>Needs a deeper correction</option>
+                        <option>Existing film or coating</option>
+                        <option>I’m not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                  <p class="field-note">
+                    This helps shape the consultation. Final treatment
+                    suitability is assessed in person.
+                  </p>
+                </fieldset>
+
+                <fieldset class="booking-step" data-booking-step="2" hidden>
+                  <legend>When can we take a closer look?</legend>
+                  <p class="step-description">
+                    Choose a preferred consultation date and time.
+                  </p>
+                  <div class="date-fields">
+                    <div>
+                      <label class="field-label" for="booking-date"
+                        >Preferred date</label
+                      ><input
+                        id="booking-date"
+                        name="date"
+                        type="date"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label class="field-label" for="booking-time"
+                        >Preferred time</label
+                      ><select id="booking-time" name="time" required>
+                        <option value="">Select a time</option>
+                        <option>09:00</option>
+                        <option>11:00</option>
+                        <option>14:00</option>
+                        <option>16:00</option>
+                      </select>
+                    </div>
+                  </div>
+                  <p class="field-note">
+                    Sample time slots for this demo. Live availability is not
+                    connected.
+                  </p>
+                </fieldset>
+                <fieldset class="booking-step" data-booking-step="3" hidden>
+                  <legend>Your treatment brief.</legend>
+                  <p class="step-description">
+                    Review your selection before completing the demo.
+                  </p>
+                  <dl class="review-details" id="review-details"></dl>
+                  <p class="field-note">
+                    This is a preview only. Nothing will be sent or booked.
+                  </p>
+                </fieldset>
+                <p class="form-error" id="booking-error" role="alert"></p>
+                <div class="booking-actions">
+                  <button
+                    type="button"
+                    class="back-button"
+                    id="booking-back"
+                    hidden
+                  >
+                    ← Back</button
+                  ><span id="step-count">STEP 01 OF 04</span
+                  ><button
+                    type="submit"
+                    class="button button-amber"
+                    id="booking-next"
+                  >
+                    <span>Continue</span
+                    ><svg class="icon"><use href="#arrow" /></svg>
+                  </button>
+                </div>
+              </form>
+              <div
+                class="booking-success"
+                id="booking-success"
+                hidden
+                tabindex="-1"
+              >
+                <span class="success-icon">✓</span>
+                <p class="eyebrow">YOUR CARE BRIEF / COMPLETE</p>
+                <h3>A considered start.<br />For lasting care.</h3>
+                <p>
+                  Your request is complete. Appointment has been made
+                  and information will be sent to you.
+                </p>
+                <button class="button button-outline" id="booking-reset">
+                  Start another care brief
+                  <svg class="icon"><use href="#arrow" /></svg>
+                </button>
+              </div>
+              <noscript
+                ><p class="field-note">
+                  Enable JavaScript to explore the interactive booking demo.
+                </p></noscript
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section container">
+        <div>
+          <p class="section-label">AFTER THE HANDOVER <span>08 /</span></p>
+          <p class="sample-note">
+            Illustrative client perspective.<br />Showcase content.
+          </p>
+        </div>
+        <figure class="client-note">
+          <blockquote>
+            “I came in for the paint protection. I left knowing exactly how to
+            look after it.”
+          </blockquote>
+          <figcaption>
+            <span class="quote-rule"></span> ALEX K.
+            <span>PPF & AFTERCARE / SAMPLE CLIENT</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="faq section container">
+        <div class="reveal">
+          <p class="section-label">
+            <span class="tiny-cross">+</span> 09 / A LITTLE CLARITY
+          </p>
+          <h2>The details,<br />explained.</h2>
+          <a class="text-link" href="#booking"
+            >Let’s talk about your car
+            <svg class="icon"><use href="#diagonal" /></svg
+          ></a>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>How long does ceramic coating take?<span></span></summary>
+            <p>
+              Our concept service allows two to three days for preparation,
+              application, and initial curing. A real appointment timeline would
+              depend on paint condition and the chosen coating.
+            </p>
+          </details>
+          <details>
+            <summary>
+              What’s the difference between PPF and ceramic?<span></span>
+            </summary>
+            <p>
+              Paint protection film is a physical layer designed to help absorb
+              minor road impacts. Ceramic coating focuses on surface gloss and
+              easier cleaning. They can also be combined as part of a tailored
+              finish.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Can I tailor a package to my vehicle?<span></span>
+            </summary>
+            <p>
+              Absolutely. The packages are starting points. A consultation would
+              help shape the right combination around your car, its condition,
+              and your priorities.
+            </p>
+          </details>
+          <details>
+            <summary>Can I request a consultation first?<span></span></summary>
+            <p>
+              Yes. Start with “Help me decide” in the care brief. We’ll
+              preselect a consultation so you can discuss the right treatment
+              after an inspection.
+            </p>
+          </details>
+          
+        </div>
+      </section>
+
+      <section class="final-cta" id="contact">
+        <div class="container final-layout">
+          <div class="final-content">
+            <p class="eyebrow">A CLEANER FINISH. A CLEARER PLAN.</p>
+            <h2>Give your car<br /><em>the right care.</em></h2>
+            <a class="button button-amber" href="#booking"
+              >Plan a studio consultation
+              <svg class="icon"><use href="#diagonal" /></svg
+            ></a>
+          </div>
+          <div class="final-note">
+            <span class="tiny-cross">+</span>
+            <p>DETAILING / PPF / CERAMIC<br />TINT / WRAP / PAINT CORRECTION</p>
+            <a href="#services">Back to the treatment index ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <div class="footer-main">
+        <div>
+          <a class="brand" href="#home"
+            ><span class="brand-mark" aria-hidden="true">G</span
+            ><span
+              >G-Walt<span class="brand-light">CARS</span
+              ><small>DETAILING & PROTECTION</small></span
+            ></a
+          >
+          <p>Detailing. Protection. Lasting care.</p>
+        </div>
+        <div>
+          <p class="footer-label">FIND THE STUDIO</p>
+          <span>New Castle, DE 19720, United States</span
+          ><small>Concept location · By appointment</small>
+        </div>
+        <div>
+          <p class="footer-label">START A CONVERSATION</p>
+          <a href="#booking">Explore a consultation ↗</a
+          ><small>Contact details available on launch</small>
+        </div>
+        <div>
+          <p class="footer-label">FROM THE WORKBENCH</p>
+          <span class="social-placeholder"
+            >Instagram <small>Coming soon</small></span
+          ><span class="social-placeholder"
+            >YouTube <small>Coming soon</small></span
+          >
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> G-Walt Cars. A showcase concept.</p>
+        <p>
+          DESIGNED & ENGINEERED BY <strong>GARA TECH <span>↗</span></strong>
+        </p>
+        <a href="#home" aria-label="Back to top">BACK TO TOP ↑</a>
+      </div>
+    </footer>
+
+    <dialog
+      class="project-dialog"
+      id="project-dialog"
+      aria-labelledby="project-dialog-title"
+    >
+      <button class="dialog-close" aria-label="Close project">×</button>
+      <div class="dialog-visual">
+        <img id="project-dialog-image" src="assets/hero.jpg" alt="" /><button
+          class="dialog-zoom"
+          aria-pressed="false"
+          aria-label="Zoom project image"
+        >
+          Inspect finish <span>+</span></button
+        ><span class="dialog-position" aria-live="polite">01 / 04</span>
+      </div>
+      <div class="dialog-content">
+        <p class="eyebrow" id="project-dialog-label"></p>
+        <h2 id="project-dialog-title"></h2>
+        <p id="project-dialog-copy"></p>
+        <p class="field-note">
+          Visual concept · Stock photography · Not a completed client project
+        </p>
+        <a class="button button-amber" id="project-dialog-cta" href="#booking"
+          >Discuss this treatment
+          <svg class="icon"><use href="#diagonal" /></svg
+        ></a>
+        <div
+          class="dialog-navigation"
+          role="group"
+          aria-label="Browse projects"
+        >
+          <button class="dialog-prev" aria-label="Previous project">
+            <svg class="icon"><use href="#arrow" /></svg></button
+          ><span>TREATMENT STUDIES</span
+          ><button class="dialog-next" aria-label="Next project">
+            <svg class="icon"><use href="#arrow" /></svg>
+          </button>
+        </div>
+      </div>
+    </dialog>
+    <div class="gallery-cursor" aria-hidden="true">EXPLORE<span>↗</span></div>
+  </body>
+</html>

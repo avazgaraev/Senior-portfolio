@@ -1,0 +1,29 @@
+/* Fictional showcase content. Replace with verified clinic information before launch. */
+window.CLINIC = {
+  departments: [
+    { id: 'dentistry', name: 'Dentistry', line: 'A thoughtful approach to every smile.', description: 'From a regular checkup to a conversation about restorative care. Understand your options, at your own pace.', image: 'dental', doctor: 'kamran', services: ['Dental checkup', 'Dental hygiene consultation', 'Dental implant consultation'], duration: 40 },
+    { id: 'dermatology', name: 'Dermatology', line: 'Understand your skin. Find your next step.', description: 'A dedicated conversation about your skin, with time to discuss concerns and a plan shaped around you.', image: 'consultation', doctor: 'leyla', services: ['Dermatology consultation', 'Skin assessment', 'Mole assessment'], duration: 30 },
+    { id: 'aesthetics', name: 'Aesthetic Medicine', line: 'Considered choices. Individual care.', description: 'Explore your goals with a medical professional. A consultation comes first, with a clear discussion of suitability and limitations.', image: 'skin', doctor: 'leyla', services: ['Aesthetic consultation', 'Skin care review'], duration: 45 },
+    { id: 'general', name: 'General Medicine', line: 'A familiar place to begin.', description: 'For everyday health questions, routine reviews, and a coordinated path to specialist care when appropriate.', image: 'consultation', doctor: 'nigar', services: ['General consultation', 'Annual health review'], duration: 30 },
+    { id: 'diagnostics', name: 'Diagnostics', line: 'More information. A clearer conversation.', description: 'Selected diagnostic appointments in one setting, with preparation guidance and results discussed by your clinician.', image: 'diagnostics', doctor: 'murad', services: ['Blood test appointment', 'Ultrasound consultation', 'ECG appointment', 'Preventive screening consultation'], duration: 30 },
+    { id: 'womens-health', name: 'Women’s Health', line: 'Personal care, at every stage.', description: 'A private, respectful space for health questions, preventive care, and conversations about your changing needs.', image: 'consultation', doctor: 'aylin', services: ['Women’s health consultation', 'Women’s health screening consultation'], duration: 40 }
+  ],
+  doctors: [
+    { id: 'leyla', name: 'Dr. Leyla Mammadova', specialty: 'Dermatology & Aesthetic Medicine', departments: ['dermatology', 'aesthetics'], experience: '12 years', languages: 'Azerbaijani, English', days: [1,2,3,4,5], focus: ['Skin concerns', 'Skin assessment', 'Aesthetic consultations'], bio: 'Leyla’s approach begins with listening. Her consultation style gives patients space to explain their concerns, ask questions, and understand the options discussed.' },
+    { id: 'kamran', name: 'Dr. Kamran Aliyev', specialty: 'Dentistry', departments: ['dentistry'], experience: '10 years', languages: 'Azerbaijani, English, Russian', days: [1,2,4,5,6], focus: ['Preventive dentistry', 'Restorative consultations', 'Dental implant consultations'], bio: 'Kamran takes a considered approach to dental care, explaining each part of a consultation and helping patients feel involved in decisions about their oral health.' },
+    { id: 'nigar', name: 'Dr. Nigar Hasanli', specialty: 'General Medicine', departments: ['general'], experience: '14 years', languages: 'Azerbaijani, English', days: [1,2,3,4,5], focus: ['Routine health reviews', 'Everyday health concerns', 'Coordinated referrals'], bio: 'Nigar offers a calm starting point for everyday health questions. Her focus is on understanding the whole person and making the next steps easier to follow.' },
+    { id: 'murad', name: 'Dr. Murad Karimov', specialty: 'Diagnostics', departments: ['diagnostics'], experience: '11 years', languages: 'Azerbaijani, Russian', days: [1,3,4,5,6], focus: ['Diagnostic consultations', 'Ultrasound appointments', 'Screening coordination'], bio: 'Murad’s consultations focus on explaining the purpose of an examination and how information can support a discussion with the referring clinician.' },
+    { id: 'aylin', name: 'Dr. Aylin Safarova', specialty: 'Women’s Health', departments: ['womens-health'], experience: '9 years', languages: 'Azerbaijani, English', days: [1,2,3,5,6], focus: ['Preventive health conversations', 'Women’s health reviews', 'Individual care planning'], bio: 'Aylin creates a respectful space for personal health conversations, with an emphasis on privacy, clear explanations, and shared decision-making.' }
+  ],
+  // Sample slots only. Day availability is filtered by the selected doctor.
+  slots: ['09:30', '10:00', '11:30', '13:00', '14:30', '15:00', '16:30'],
+  unavailableSlots: ['11:30', '14:30'],
+  faq: [
+    ['How do I choose the right specialist?', 'Explore our departments or use the care navigator to find a possible starting point. The navigator helps you browse; it does not provide a diagnosis.'],
+    ['Can I book without selecting a doctor?', 'Yes. Choose “No preference” in the appointment flow to leave the specialist selection to the clinic team.'],
+    ['Can I reschedule my appointment?', 'In a live clinic service, the reception team would help you arrange a new time. This concept website does not create or manage real appointments.'],
+    ['Do you provide diagnostic tests?', 'The concept includes blood tests, ultrasound, ECG, and preventive screening consultations. Any testing would depend on clinical assessment and availability.'],
+    ['What should I bring to my first visit?', 'Bring your identification, any referral or relevant previous reports, and a list of medicines you take. Your clinic should confirm anything specific before your visit.'],
+    ['Do you accept insurance?', 'Insurance arrangements would be confirmed directly with the clinic and your provider. No insurance partnerships are represented in this concept.']
+  ]
+};

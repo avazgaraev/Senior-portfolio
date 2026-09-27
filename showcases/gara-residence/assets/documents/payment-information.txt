@@ -1,0 +1,19 @@
+GARA RESIDENCE — ILLUSTRATIVE PAYMENT INFORMATION
+
+Example apartment price: 245,000 AZN
+Example down payment: 30% = 73,500 AZN
+Remaining balance: 171,500 AZN
+Example payment period: 24 months
+Estimated monthly payment: 7,145.83 AZN (display rounded to 7,146 AZN)
+
+FORMULA
+Initial payment = apartment price x down-payment percentage
+Remaining amount = apartment price - initial payment
+Estimated monthly payment = remaining amount / number of months
+
+The website allows 20%, 30%, 40% or 50% down payments and 12, 24 or 36
+monthly payments. No interest, taxes, fees, insurance or other costs are
+included. This is not a mortgage quote or a bank financing promise.
+
+All amounts and project information are fictional demonstration data.
+No payment, application, reservation or contract can be made on the site.
