@@ -120,6 +120,25 @@ body::before, .noise, .orb, .cursor-glow, .ai-demos::before { display: none; }
 .project-modal-close { background: #e8eef2; border-color: var(--line); color: var(--text); }
 .project-modal-close:hover { background: #dce6ed; border-color: var(--line-strong); }
 .cta::after, .solve-card::before { display: none; }
+.contact-panel { display: grid; grid-template-columns: minmax(0, .85fr) minmax(21rem, 1.15fr); gap: clamp(2rem, 6vw, 6rem); align-items: start; padding: clamp(1.5rem, 4vw, 3.5rem); background: #f7f9fa; border: 1px solid #c7d5df; }
+.contact-panel-copy { min-width: 0; }
+.contact-panel-copy h2 { max-width: 14ch; margin: 0 0 1.25rem; color: var(--text); font-size: clamp(2rem, 4vw, 3.8rem); line-height: 1.02; }
+.contact-panel-copy p { max-width: 34rem; color: var(--muted); line-height: 1.7; }
+.contact-panel-copy .text-link, .contact-panel-copy .btn { margin-top: 1rem; }
+.contact-form { min-width: 0; padding: clamp(1.1rem, 3vw, 2rem); background: #fff; border: 1px solid var(--line); }
+.contact-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.contact-fields label { display: grid; gap: .45rem; color: var(--muted); font-size: .72rem; font-weight: 700; }
+.contact-fields label span { letter-spacing: .04em; }
+.contact-field-full { grid-column: 1 / -1; }
+.contact-form input, .contact-form textarea { width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #f8fafb; color: var(--text); padding: .78rem .85rem; font: 500 .86rem/1.5 "Manrope", system-ui, sans-serif; transition: border-color .2s ease, box-shadow .2s ease, background .2s ease; }
+.contact-form textarea { min-height: 8.5rem; resize: vertical; }
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: #8b9aa4; }
+.contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--accent); background: #fff; box-shadow: 0 0 0 3px rgba(54, 93, 119, .1); }
+.contact-form .btn { margin-top: 1.15rem; }
+.contact-form-status { min-height: 1.3rem; margin: .8rem 0 0; color: var(--muted); font-size: .75rem; line-height: 1.4; }
+.contact-form-status.is-success { color: #3f7158; }
+.contact-form-status.is-error { color: #9b5050; }
+.contact-honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important; }
 .site-footer { background: #e3e9ed; border-color: #ccd7de; }
 
 /* AI diagrams use the same restrained palette as the surrounding page. */
@@ -156,4 +175,12 @@ body::before, .noise, .orb, .cursor-glow, .ai-demos::before { display: none; }
 @media (max-width:1050px) {
   .site-header .nav-links { background: #fff; border-color: var(--line); box-shadow: 0 16px 36px rgba(35, 53, 66, .12); }
   .nav-dropdown-menu { background: transparent; border-color: #c1d2dd; box-shadow: none; }
+}
+@media (max-width:700px) {
+  .contact-panel { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.1rem; }
+  .contact-panel-copy h2 { max-width: 13ch; font-size: clamp(2rem, 10vw, 3rem); }
+  .contact-fields { grid-template-columns: 1fr; }
+  .contact-field-full { grid-column: auto; }
+  .contact-form { padding: 1rem; }
+  .contact-form .btn { width: 100%; }
 }

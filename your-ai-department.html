@@ -323,20 +323,31 @@
 
     <section class="section" id="ai-contact">
       <div class="container">
-        <div class="cta ai-cta glass reveal">
-          <div>
+        <div class="contact-panel ai-cta glass reveal">
+          <div class="contact-panel-copy">
             <div class="section-kicker">Your AI Department</div>
             <h2>Have a workflow where AI could create real operational value?</h2>
             <p>
               Start from the process, not the model. I can help shape the use case, architecture, integrations and
               production path around the business requirement.
             </p>
+            <a class="btn btn-ghost magnetic" href="software-solutions.html">Software Solutions <span aria-hidden="true">→</span></a>
           </div>
-
-          <div class="cta-actions">
-            <a class="btn btn-primary magnetic" href="mailto:avazgarayev@gmail.com?subject=Your%20AI%20Department">Discuss a solution <span>↗</span></a>
-            <a class="btn btn-ghost magnetic" href="software-solutions.html">Software Solutions <span>→</span></a>
-          </div>
+          <form class="contact-form" action="https://formsubmit.co/avazgarayev@gmail.com" method="POST" data-ajax-action="https://formsubmit.co/ajax/avazgarayev@gmail.com" data-contact-form>
+            <input type="hidden" name="_subject" value="Your AI Department enquiry" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://avazgarayev.az/your-ai-department.html?contact=sent" />
+        <input type="hidden" name="_url" value="https://avazgarayev.az/your-ai-department.html" />
+            <input class="contact-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="contact-fields">
+              <label><span>Name</span><input type="text" name="name" autocomplete="name" placeholder="Your name" required /></label>
+              <label><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@company.com" required /></label>
+              <label class="contact-field-full"><span>What workflow could AI improve?</span><textarea name="message" rows="5" placeholder="Tell me about the process, team or customer experience..." required></textarea></label>
+            </div>
+            <button class="btn btn-primary" type="submit">Send message <span aria-hidden="true">↗</span></button>
+            <p class="contact-form-status" data-form-status role="status" aria-live="polite"></p>
+          </form>
         </div>
       </div>
     </section>
