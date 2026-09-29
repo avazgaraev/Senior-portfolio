@@ -4,14 +4,14 @@
 
   $$('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
 
-  // Contact forms use FormSubmit for static-host delivery, with a normal form
-  // action as a fallback when the AJAX request is unavailable.
+  // Contact forms use a hidden native target so the message is submitted
+  // immediately without opening the FormSubmit response page.
   $$('[data-contact-form]').forEach((form, index) => {
     const status = $('[data-form-status]', form);
     const submit = $('button[type="submit"]', form);
     if (!status || !submit) return;
 
-    form.addEventListener('submit', async event => {
+    form.addEventListener('submit', event => {
       event.preventDefault();
       if (form.elements._honey?.value) return;
       const originalLabel = submit.innerHTML;
@@ -20,51 +20,27 @@
       status.className = 'contact-form-status';
       status.textContent = '';
 
+      const frame = document.createElement('iframe');
+      const frameName = `contact-submit-${Date.now()}-${index}`;
+      frame.name = frameName;
+      frame.hidden = true;
+      frame.setAttribute('aria-hidden', 'true');
+      document.body.append(frame);
+
+      const previousTarget = form.getAttribute('target');
+      form.setAttribute('target', frameName);
       try {
-        const payload = Object.fromEntries(new FormData(form).entries());
-        const response = await fetch(form.dataset.ajaxAction || form.action, {
-          method: 'POST',
-          body: JSON.stringify(payload),
-          headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json'
-          }
-        });
-        const result = await response.json().catch(() => ({}));
-        const succeeded = result.success === true || result.success === 'true';
-        if (!response.ok || !succeeded) {
-          throw new Error(result.message || 'Contact request failed');
-        }
+        HTMLFormElement.prototype.submit.call(form);
         form.reset();
-        status.classList.add('is-success');
+        status.className = 'contact-form-status is-success';
         status.textContent = 'Thanks — your message has been sent. I’ll get back to you soon.';
       } catch (error) {
-        // Keep the user on the page even when the AJAX endpoint rejects the
-        // request. A hidden native form target avoids CORS issues and still
-        // lets FormSubmit process the submission.
-        const frame = document.createElement('iframe');
-        const frameName = `contact-submit-${Date.now()}-${index}`;
-        frame.name = frameName;
-        frame.hidden = true;
-        frame.setAttribute('aria-hidden', 'true');
-        document.body.append(frame);
-
-        const previousTarget = form.getAttribute('target');
-        form.setAttribute('target', frameName);
-        try {
-          HTMLFormElement.prototype.submit.call(form);
-          form.reset();
-          status.className = 'contact-form-status is-success';
-          status.textContent = 'Thanks — your message has been sent. I’ll get back to you soon.';
-        } catch (fallbackError) {
-          status.className = 'contact-form-status is-error';
-          status.textContent = 'Your message could not be sent right now. Please try again.';
-        } finally {
-          if (previousTarget === null) form.removeAttribute('target');
-          else form.setAttribute('target', previousTarget);
-          setTimeout(() => frame.remove(), 10000);
-        }
+        status.className = 'contact-form-status is-error';
+        status.textContent = 'Your message could not be sent right now. Please try again.';
       } finally {
+        if (previousTarget === null) form.removeAttribute('target');
+        else form.setAttribute('target', previousTarget);
+        setTimeout(() => frame.remove(), 10000);
         submit.disabled = false;
         submit.innerHTML = originalLabel;
       }
