@@ -5,10 +5,11 @@
   const page = document.body.dataset.page;
   const homeLink = section => page === 'home' ? `#${section}` : `index.html#${section}`;
   const current = name => page === name ? ' class="active" aria-current="page"' : '';
-  const garaActive = page === 'software-solutions' || page === 'ai-department';
+  const garaActive = ['software-solutions', 'ai-department', 'voice-playground'].includes(page);
   const solutions = [
     { page: 'software-solutions', href: 'software-solutions.html', label: 'Software Solutions' },
-    { page: 'ai-department', href: 'your-ai-department.html', label: 'Your AI Department' }
+    { page: 'ai-department', href: 'your-ai-department.html', label: 'Your AI Department' },
+    { page: 'voice-playground', href: 'stt-tts-playground.html', label: 'STT / TTS Playground' }
   ];
 
   // Shared by every page. Make all navbar content changes here.
@@ -34,6 +35,7 @@
             ${solutions.map(item => `<a href="${item.href}"${current(item.page)}>${item.label}</a>`).join('')}
           </div>
         </div>
+        <a href="stt-tts-playground.html"${current('voice-playground')} aria-label="STT / TTS Playground">Playground</a>
         <a href="blog.html"${current('blog')}>Blog</a>
         <a href="${homeLink('contact')}">Contact</a>
       </nav>

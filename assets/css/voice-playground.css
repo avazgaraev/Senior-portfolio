@@ -1,0 +1,61 @@
+.voice-page { padding: 42px 0 70px; }
+.voice-back { display: inline-block; color: var(--muted); font-size: .8rem; margin-bottom: 30px; }
+.voice-intro { margin-bottom: 34px; }
+.voice-intro h1 { font-size: clamp(2.2rem, 4.4vw, 3.8rem); line-height: 1.08; letter-spacing: -.055em; margin: 0 0 20px; }
+.voice-intro > p { max-width: 660px; font-size: 1rem; color: var(--muted); }
+.voice-workspace { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 24px; }
+.voice-stage { border-radius: 26px; padding: 26px 30px 20px; text-align: center; overflow: hidden; background: radial-gradient(ellipse at 50% 34%, #e7eef2, transparent 64%), var(--surface); }
+.voice-stage-top, .voice-stage-bottom, .voice-notebook-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.voice-label { font: 500 .65rem/1.5 "IBM Plex Mono", monospace; letter-spacing: .13em; color: var(--muted); }
+.voice-badge { font-size: .68rem; border: 1px solid var(--line); border-radius: 30px; padding: 4px 10px; background: white; }
+.voice-portrait-wrap { --voice-level: 0; position: relative; width: 280px; height: 280px; margin: 26px auto 8px; display: grid; place-items: center; }
+.voice-portrait { width: 186px; height: 186px; border-radius: 50%; overflow: hidden; border: 5px solid #fff; box-shadow: 0 8px 35px #263d4918; background: #dce5ec; z-index: 1; }
+.voice-portrait img { height: 100%; width: 100%; object-fit: cover; object-position: center 24%; }
+.voice-orbit { position: absolute; border: 1px solid #bccdd8; border-radius: 50%; transition: transform .12s, opacity .12s; }
+.voice-orbit-inner { inset: 30px; transform: scale(calc(1 + var(--voice-level) * .13)); }
+.voice-orbit-outer { inset: 9px; border-style: dashed; opacity: .65; transform: scale(calc(1 + var(--voice-level) * .09)); }
+.voice-avatar-label { z-index: 2; position: absolute; bottom: 40px; background: #fff; border: 1px solid var(--line); box-shadow: 0 3px 12px #23354209; border-radius: 20px; padding: 5px 13px; font: 500 .62rem/1.5 "IBM Plex Mono", monospace; letter-spacing: .08em; }
+.voice-identity h2 { font-size: 1.25rem; letter-spacing: -.025em; margin: 0 0 7px; }
+.voice-identity p { color: var(--muted); font-size: .8rem; max-width: 330px; margin: auto; }
+.voice-waveform { height: 46px; display: flex; justify-content: center; align-items: center; gap: 5px; margin: 16px 0 0; }
+.voice-waveform i { width: 3px; height: 5px; background: #7895a8; border-radius: 6px; transition: height .1s; }
+.voice-state { font-size: .78rem; color: var(--muted); margin: 6px 0 20px; min-height: 1.6em; }
+.voice-controls { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.voice-allowance { margin: 0 auto 20px; max-width: 430px; padding: 14px 18px; border: 1px solid var(--line); border-radius: 14px; background: #f0f5f7; text-align: left; }
+.voice-allowance strong { display: block; font-size: .79rem; }
+.voice-allowance p { color: var(--muted); font-size: .74rem; margin: 4px 0 8px; }
+.voice-allowance > span { font: 500 .69rem/1.5 "IBM Plex Mono", monospace; color: var(--accent); }
+.voice-allowance[data-limited="true"] { border-color: #c3cfda; background: #e8eff4; }
+.voice-controls .btn { font-family: inherit; font-size: .78rem; min-height: 44px; padding: 11px 15px; cursor: pointer; }
+.voice-controls button:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+.voice-controls button[aria-pressed="true"] { background: #dfe8ee; border-color: var(--accent); }
+.voice-stage-bottom { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 15px; color: var(--muted); font-size: .68rem; text-align: left; }
+.voice-stage-bottom time { font-family: "IBM Plex Mono", monospace; }
+.voice-sidebar { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.voice-notebook { border-radius: 26px; padding: 24px; display: flex; flex-direction: column; flex: 1; min-height: 340px; }
+.voice-notebook-head h2 { margin: 5px 0 0; font-size: 1.3rem; }
+.voice-text-button, .voice-audio-resume { background: transparent; border: 0; cursor: pointer; color: var(--accent); font-family: inherit; font-weight: 600; font-size: .75rem; line-height: 1.5; padding: 10px; }
+.voice-audio-resume { margin-top: 10px; text-decoration: underline; }
+.voice-transcript-empty { flex: 1; display: grid; place-content: center; text-align: center; color: var(--muted); padding: 32px 0; }
+.voice-transcript-empty > span { font: 4.6rem/1 Georgia, serif; color: #b1c2ce; }
+.voice-transcript-empty p { font-size: .85rem; margin: 0; }
+.voice-transcript-empty[hidden], .voice-caption[hidden] { display: none; }
+.voice-transcripts { overflow-y: auto; max-height: 300px; overflow-wrap: anywhere; scrollbar-width: thin; }
+.voice-caption { margin: 20px 0 0; border-left: 2px solid var(--line-strong); padding-left: 14px; }
+.voice-caption h3 { margin: 0 0 5px; font-size: .72rem; color: var(--muted); }
+.voice-caption p { font-size: .86rem; white-space: pre-wrap; margin: 0; }
+.voice-caption-assistant { border-color: var(--accent); }
+.voice-caption-note { color: var(--muted); font-size: .65rem; padding-top: 20px; margin: auto 0 0; }
+.voice-topics { padding: 0 6px; }
+.voice-topics h2 { font-size: .85rem; margin: 0 0 12px; }
+.voice-topics p { margin: 0 0 8px; font-size: .84rem; border-bottom: 1px solid var(--line); padding-bottom: 8px; color: #42586a; }
+.voice-topics > span { font-size: .7rem; color: var(--muted); }
+.voice-footnotes { padding-top: 22px; }
+.voice-footnotes p { color: var(--muted); font-size: .73rem; max-width: 890px; margin-bottom: 10px; }
+.voice-footnotes #voice-notice { font-size: .83rem; color: var(--text); }
+.voice-footnotes > div { display: flex; gap: 24px; font-size: .8rem; margin-top: 20px; flex-wrap: wrap; }
+.voice-stage[data-state="active"] .voice-badge { border-color: #abc9b9; color: #3d6c55; }
+.voice-page :is(button, a):focus-visible, .voice-transcripts:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media (max-width: 800px) { .voice-workspace { grid-template-columns: 1fr; } .voice-page { padding-top: 25px; } .voice-intro h1 { font-size: clamp(2rem, 6vw, 3rem); } .voice-notebook { min-height: 300px; } }
+@media (max-width: 420px) { .voice-stage { padding: 22px 16px 18px; } .voice-portrait-wrap { width: 250px; height: 250px; } .voice-portrait { width: 166px; height: 166px; } .voice-avatar-label { bottom: 30px; } .voice-controls { gap: 6px; } .voice-controls .btn { font-size: .73rem; padding: 10px 12px; } }
+@media (prefers-reduced-motion: reduce) { .voice-orbit { transform: none; transition: none; } .voice-waveform i { transition: none; } }
